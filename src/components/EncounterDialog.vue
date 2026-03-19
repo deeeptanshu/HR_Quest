@@ -43,6 +43,7 @@
 <script setup>
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { getGuestTitle } from '../game/GuestTitles.js';
+import { getGuestAvatarAssetPath } from '../game/assets';
 
 const props = defineProps({
   isActive: Boolean,
@@ -106,18 +107,7 @@ let typewriterTimeout = null;
 
 // Helper function to get avatar path
 function getNpcAvatarPath(guestName) {
-  if (guestName.includes('Elena Verna')) {
-    return '/assets/elena-front.png';
-  }
-  // Transform name to match renamed files (spaces to hyphens, special chars removed)
-  const safeName = guestName
-    .replace(/\s+/g, '-')
-    .replace(/[&+,]/g, '-')
-    .replace(/ö/g, 'o')
-    .replace(/ü/g, 'u')
-    .replace(/ä/g, 'a')
-    .replace(/-+/g, '-');
-  return `/assets/avatars/${safeName}_pixel_art.png`;
+  return getGuestAvatarAssetPath(guestName);
 }
 
 // Generate random message

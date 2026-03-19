@@ -128,6 +128,7 @@ import close from '@iconify/icons-pixelarticons/close';
 import user from '@iconify/icons-pixelarticons/user';
 import map from '@iconify/icons-pixelarticons/map';
 import download from '@iconify/icons-pixelarticons/download';
+import { getGuestAvatarAssetPath } from '../game/assets';
 
 const props = defineProps({
   isActive: Boolean,
@@ -149,23 +150,7 @@ const capturedGuests = computed(() => {
 });
 
 function getGuestAvatarPath(guest) {
-  if (!guest.name) return '/assets/avatars/default.png';
-
-  // Special case for Elena - use elena-front.png
-  if (guest.name.includes('Elena Verna')) {
-    return '/assets/elena-front.png';
-  }
-
-  // Transform name to match renamed files (spaces to hyphens, special chars removed)
-  const safeName = guest.name
-    .replace(/\s+/g, '-')
-    .replace(/[&+,]/g, '-')
-    .replace(/ö/g, 'o')
-    .replace(/ü/g, 'u')
-    .replace(/ä/g, 'a')
-    .replace(/-+/g, '-');
-
-  return `/assets/avatars/${safeName}_pixel_art.png`;
+  return getGuestAvatarAssetPath(guest.name);
 }
 
 function handleImageError(guest) {

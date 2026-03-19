@@ -1,6 +1,7 @@
 import { Scene } from 'phaser';
 import guestDataManager from '../GuestData';
 import { EventBus } from '../EventBus';
+import { AUDIO_TRACKS, MENU_LOGO_PATH } from '../assets';
 
 export class Preloader extends Scene
 {
@@ -40,8 +41,8 @@ export class Preloader extends Scene
         this.desertAssetsLoaded = true;
         this.load.setPath('assets');
 
-        // Load logo (public/assets/logo.png)
-        this.load.image('logo', 'GameLogo.png');
+        // Load menu logo
+        this.load.image('logo', MENU_LOGO_PATH);
 
         // Load Tuxemon tileset and tilemaps (using extruded version to prevent texture bleeding)
         this.load.image('tiles', 'tuxmon-sample-32px-extruded.png');
@@ -53,24 +54,11 @@ export class Preloader extends Scene
         this.load.image('main-back', 'main-back.png');
         this.load.image('main-left', 'main-left.png');
         this.load.image('main-right', 'main-right.png');
-        this.load.image('elena-front', 'elena-front.png');
-        this.load.image('elena-side', 'elena-side.png');
+        this.load.image('elena-front', 'elena-front.webp');
 
-        // Load battle background
-        this.load.image('battle-bg', 'battle-background.png');
-
-        // Load audio files
-        this.load.audio('menu-music', 'audio/music/menu-theme.ogg');
-        this.load.audio('overworld-music', 'audio/music/overworld-theme.ogg');
-        this.load.audio('desert-music', 'audio/music/desert-theme.mp3');
-        this.load.audio('town-music', 'audio/music/town-theme.ogg');
-        this.load.audio('battle-music', 'audio/music/battle-theme.ogg');
-        this.load.audio('battle-music-intense', 'audio/music/battle-theme-intense.ogg');
-        this.load.audio('boss-battle-music', 'audio/music/boss-battle-theme.ogg');
-        this.load.audio('victory-fanfare', 'audio/music/victory-fanfare.ogg');
-        this.load.audio('victory-music', 'audio/music/victory-theme.ogg');
-        this.load.audio('victory-music-full', 'audio/music/victory-theme-full.ogg');
-        this.load.audio('defeat-music', 'audio/music/defeat-theme.ogg');
+        // Load the two tracks needed for the first session; the rest are lazy-loaded on demand.
+        this.load.audio(AUDIO_TRACKS.menu.key, AUDIO_TRACKS.menu.path);
+        this.load.audio(AUDIO_TRACKS.overworld.key, AUDIO_TRACKS.overworld.path);
 
         // Load questions.json
         this.load.json('questions', 'questions.json');
@@ -118,37 +106,9 @@ export class Preloader extends Scene
         guestDataManager.loadQuestionsData(questionsData);
         guestDataManager.selectAllGuestsForFixedStages(); // Load stage-config guests only
 
-        // Load avatar images for selected guests
-        const avatarsToLoad = guestDataManager.getAvatarsToLoad();
-
-        console.log(`Queueing ${avatarsToLoad.length} avatar images for loading...`);
-
-        // Handle missing avatars gracefully
-        this.load.on('loaderror', (file) => {
-            if (file.key && file.key.startsWith('avatar-')) {
-                console.warn(`Avatar not found: ${file.src}, will use fallback`);
-            }
-        });
-
-        avatarsToLoad.forEach(avatar => {
-            // Try to load the avatar, but don't fail if it doesn't exist
-            this.load.image(avatar.key, avatar.path);
-        });
-
-        // Start loading the avatars if there are any
-        if (avatarsToLoad.length > 0) {
-            console.log('Starting avatar image loading...');
-            this.load.once('complete', () => {
-                console.log('Avatar loading complete!');
-                // Emit event to notify that guests are ready
-                EventBus.emit('guests-loaded', guestDataManager.getSelectedGuests());
-                this.scene.start('MainMenu');
-            });
-            this.load.start();
-        } else {
-            console.warn('No avatars to load');
-            this.scene.start('MainMenu');
-        }
+        // Avatar textures are now loaded per stage in the overworld.
+        EventBus.emit('guests-loaded', guestDataManager.getSelectedGuests());
+        this.scene.start('MainMenu');
     }
 
     create ()

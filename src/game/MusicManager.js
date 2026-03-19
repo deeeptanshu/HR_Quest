@@ -1,3 +1,5 @@
+import { AUDIO_TRACKS } from './assets';
+
 /**
  * MusicManager - Centralized music control system
  * Handles all background music transitions and playback
@@ -11,18 +13,64 @@ export class MusicManager {
 
         // Music track definitions with metadata
         this.tracks = {
-            menu: { key: 'menu-music', volume: 0.5, loop: true },
-            overworld: { key: 'overworld-music', volume: 0.4, loop: true },
-            desert: { key: 'desert-music', volume: 0.4, loop: true },
-            town: { key: 'town-music', volume: 0.4, loop: true },
-            battle: { key: 'battle-music', volume: 0.5, loop: true },
-            battleIntense: { key: 'battle-music-intense', volume: 0.5, loop: true },
-            bossBattle: { key: 'boss-battle-music', volume: 0.5, loop: true },
-            victory: { key: 'victory-music', volume: 0.6, loop: false },
-            victoryFull: { key: 'victory-music-full', volume: 0.6, loop: false },
-            victoryFanfare: { key: 'victory-fanfare', volume: 0.6, loop: false },
-            defeat: { key: 'defeat-music', volume: 0.5, loop: false }
+            menu: { ...AUDIO_TRACKS.menu, volume: 0.5, loop: true },
+            overworld: { ...AUDIO_TRACKS.overworld, volume: 0.4, loop: true },
+            desert: { ...AUDIO_TRACKS.desert, volume: 0.4, loop: true },
+            town: { ...AUDIO_TRACKS.town, volume: 0.4, loop: true },
+            battle: { ...AUDIO_TRACKS.battle, volume: 0.5, loop: true },
+            battleIntense: { ...AUDIO_TRACKS.battleIntense, volume: 0.5, loop: true },
+            bossBattle: { ...AUDIO_TRACKS.bossBattle, volume: 0.5, loop: true },
+            victoryFanfare: { ...AUDIO_TRACKS.victoryFanfare, volume: 0.6, loop: false },
+            defeat: { ...AUDIO_TRACKS.defeat, volume: 0.5, loop: false }
         };
+        this.pendingTrackLoads = new Map();
+    }
+
+    ensureTrackLoaded(trackName) {
+        const trackConfig = this.tracks[trackName];
+        if (!trackConfig) {
+            return Promise.reject(new Error(`Track "${trackName}" not found in MusicManager`));
+        }
+
+        if (this.scene.cache.audio.exists(trackConfig.key)) {
+            return Promise.resolve(trackConfig);
+        }
+
+        if (this.pendingTrackLoads.has(trackConfig.key)) {
+            return this.pendingTrackLoads.get(trackConfig.key);
+        }
+
+        const loadPromise = new Promise((resolve, reject) => {
+            const cleanup = () => {
+                this.scene.load.off('filecomplete-audio-' + trackConfig.key, onComplete);
+                this.scene.load.off('loaderror', onError);
+                this.pendingTrackLoads.delete(trackConfig.key);
+            };
+
+            const onComplete = (key) => {
+                if (key !== trackConfig.key) {
+                    return;
+                }
+                cleanup();
+                resolve(trackConfig);
+            };
+
+            const onError = (file) => {
+                if (file?.key !== trackConfig.key) {
+                    return;
+                }
+                cleanup();
+                reject(new Error(`Failed to load audio track "${trackName}"`));
+            };
+
+            this.scene.load.once('filecomplete-audio-' + trackConfig.key, onComplete);
+            this.scene.load.on('loaderror', onError);
+            this.scene.load.audio(trackConfig.key, `assets/${trackConfig.path}`);
+            this.scene.load.start();
+        });
+
+        this.pendingTrackLoads.set(trackConfig.key, loadPromise);
+        return loadPromise;
     }
 
     /**
@@ -40,6 +88,13 @@ export class MusicManager {
         const trackConfig = this.tracks[trackName];
         if (!trackConfig) {
             console.warn(`Track "${trackName}" not found in MusicManager`);
+            return null;
+        }
+
+        if (!this.scene.cache.audio.exists(trackConfig.key)) {
+            this.ensureTrackLoaded(trackName)
+                .then(() => this.play(trackName, stopCurrent, fadeInDuration))
+                .catch((error) => console.warn(error.message));
             return null;
         }
 

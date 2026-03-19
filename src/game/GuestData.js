@@ -4,6 +4,7 @@
  */
 
 import { STAGE_CONFIG, STAGE_NAME_ALIASES } from './StageConfig';
+import { cleanGuestName, getGuestAvatarAssetPath } from './assets';
 
 class GuestDataManager {
   constructor() {
@@ -87,11 +88,7 @@ class GuestDataManager {
    * @returns {string} Cleaned name
    */
   cleanGuestName(guestName) {
-    // Remove version numbers like " 2.0", " 3.0", etc.
-    let cleaned = guestName.replace(/\s+\d+\.\d+$/, '');
-    // Remove trailing underscore if any
-    cleaned = cleaned.replace(/_$/, '');
-    return cleaned.trim();
+    return cleanGuestName(guestName);
   }
 
   /**
@@ -100,93 +97,7 @@ class GuestDataManager {
    * @returns {string} Path to avatar file
    */
   generateAvatarPath(guestName) {
-    // Special case for Elena - use elena-front.png
-    if (guestName.includes('Elena Verna')) {
-      return 'elena-front.png';
-    }
-
-    // Handle collaboration episodes - use first person's avatar
-    const collaborationMappings = {
-      'Keith Coleman & Jay Baxter': 'Keith Coleman',
-      'Jake Knapp + John Zeratsky': 'Jake-Knapp-John-Zeratsky',
-      'Melissa Perri + Denise Tilles': 'Melissa Perri',
-      'Hamel Husain & Shreya Shankar': 'Hamel-Husain-Shreya-Shankar',
-      'Aishwarya Naresh Reganti + Kiriti Badam': null, // No avatar
-      'Sriram and Aarthi': 'Sriram and Aarthi'
-    };
-
-    // Handle special episodes/variations
-    const specialMappings = {
-      'Shreyas Doshi Live': 'Shreyas Doshi',
-      'Yuhki Yamashata': 'Yuhki Yamashita',
-      'Melissa': 'Melissa Perri',
-      'Failure': 'Failure',
-      // Missing avatars
-      'Dr. Fei Fei Li': 'Dr. Fei-Fei Li',
-      'Gia Laudi': 'Georgiana Laudi',
-      'Chip Conley': 'Chip Conley',
-      'Cam Adams': 'Cameron Adams',
-      'Benjamin Mann': 'Benjamin Mann',
-      'Alex Hardimen': 'Alex Hardiman',
-      'Phyl Terry': 'Phyl Terry',
-      'Jeanne Grosser': 'Jeanne DeWitt Grosser',
-      'Jess Lachs': 'Jessica Lachs',
-      'Jason M Lemkin': 'Jason Lemkin',
-      'Mike Maples Jr': 'Mike-Maples-Jr',
-      'Gustav Söderström': 'Gustav-Soderstrom'
-    };
-
-    // Check collaboration mappings first
-    for (const [collab, replacement] of Object.entries(collaborationMappings)) {
-      if (guestName.includes(collab)) {
-        if (replacement === null) {
-          return null; // No avatar available
-        }
-        const cleanName = this.cleanGuestName(replacement);
-        // Replace spaces with hyphens and remove special characters for simple filenames
-        const safeFileName = cleanName
-          .replace(/\s+/g, '-')
-          .replace(/[&+,]/g, '-')
-          .replace(/ö/g, 'o')
-          .replace(/ü/g, 'u')
-          .replace(/ä/g, 'a')
-          .replace(/-+/g, '-');
-        return `avatars/${safeFileName}_pixel_art.png`;
-      }
-    }
-
-    // Check special mappings
-    for (const [special, replacement] of Object.entries(specialMappings)) {
-      if (guestName === special || guestName.includes(special)) {
-        if (replacement === null) {
-          return null; // No avatar available
-        }
-        const cleanName = this.cleanGuestName(replacement);
-        // Replace spaces with hyphens and remove special characters for simple filenames
-        const safeFileName = cleanName
-          .replace(/\s+/g, '-')
-          .replace(/[&+,]/g, '-')
-          .replace(/ö/g, 'o')
-          .replace(/ü/g, 'u')
-          .replace(/ä/g, 'a')
-          .replace(/-+/g, '-');
-        return `avatars/${safeFileName}_pixel_art.png`;
-      }
-    }
-
-    // Clean the name first (remove version numbers, etc.)
-    const cleanName = this.cleanGuestName(guestName);
-
-    // Replace spaces with hyphens and remove special characters for simple, safe filenames
-    const safeFileName = cleanName
-      .replace(/\s+/g, '-')
-      .replace(/[&+,]/g, '-')
-      .replace(/ö/g, 'o')
-      .replace(/ü/g, 'u')
-      .replace(/ä/g, 'a')
-      .replace(/-+/g, '-');
-
-    return `avatars/${safeFileName}_pixel_art.png`;
+    return getGuestAvatarAssetPath(guestName, { leadingSlash: false });
   }
 
   /**

@@ -275,7 +275,7 @@ const {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/battle-background.png');
+  background-image: url('/assets/battle-background.webp');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;

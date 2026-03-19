@@ -2,6 +2,8 @@ import { EventBus } from '../../EventBus';
 
 export const bindOverworldEvents = (scene) => {
     scene.eventHandlers = {};
+    scene.pendingBattleMusicToken = 0;
+    scene.pendingResultAudioToken = 0;
     scene.bindEvent = (eventName, handler) => {
         scene.eventHandlers[eventName] = handler;
         EventBus.on(eventName, handler);
@@ -32,6 +34,8 @@ export const bindOverworldEvents = (scene) => {
     // Listen for battle end - re-enable input
     scene.bindEvent('battle-ended', () => {
         scene.battleActive = false;
+        scene.pendingBattleMusicToken += 1;
+        scene.pendingResultAudioToken += 1;
 
         // Stop any victory/defeat audio immediately, then resume map music
         if (scene.victorySound && scene.victorySound.isPlaying) {
@@ -57,6 +61,8 @@ export const bindOverworldEvents = (scene) => {
             scene.battleNPC = null;
         }
         scene.battleActive = false;
+        scene.pendingBattleMusicToken += 1;
+        scene.pendingResultAudioToken += 1;
         // Resume overworld music when battle is rejected
         if (scene.musicManager) {
             scene.musicManager.resume();
@@ -77,24 +83,33 @@ export const bindOverworldEvents = (scene) => {
     scene.bindEvent('play-battle-music', () => {
         // Play battle music (overworld music already paused from start-battle event)
         if (scene.musicManager && scene.sound && scene.sound.context) {
-            try {
-                // Create battle music as a separate sound object (not managed by MusicManager)
-                if (!scene.battleMusic) {
-                    scene.battleMusic = scene.sound.add('battle-music', {
-                        loop: true,
-                        volume: 0.5
-                    });
-                }
-                if (scene.battleMusic && !scene.battleMusic.isPlaying) {
-                    scene.battleMusic.play();
-                }
-            } catch (e) {
-                console.warn('Failed to play battle music:', e);
-            }
+            const requestToken = ++scene.pendingBattleMusicToken;
+            scene.musicManager.ensureTrackLoaded('battle')
+                .then(() => {
+                    if (!scene.sys?.isActive() || !scene.battleActive || requestToken !== scene.pendingBattleMusicToken) {
+                        return;
+                    }
+                    try {
+                        if (!scene.battleMusic) {
+                            scene.battleMusic = scene.sound.add('battle-music', {
+                                loop: true,
+                                volume: 0.5
+                            });
+                        }
+                        if (scene.battleMusic && !scene.battleMusic.isPlaying) {
+                            scene.battleMusic.play();
+                        }
+                    } catch (e) {
+                        console.warn('Failed to play battle music:', e);
+                    }
+                })
+                .catch((error) => console.warn(error.message));
         }
     });
 
     scene.bindEvent('stop-battle-music', () => {
+        scene.pendingBattleMusicToken += 1;
+
         // Stop only the battle music
         if (scene.battleMusic && scene.battleMusic.isPlaying) {
             try {
@@ -137,6 +152,8 @@ export const bindOverworldEvents = (scene) => {
 
     // Force resume map music (e.g. when closing results early)
     scene.bindEvent('resume-map-music', () => {
+        scene.pendingResultAudioToken += 1;
+        scene.pendingBattleMusicToken += 1;
         if (scene.victorySound && scene.victorySound.isPlaying) {
             scene.victorySound.stop();
         }
@@ -150,65 +167,73 @@ export const bindOverworldEvents = (scene) => {
 
     scene.bindEvent('play-victory-sound', () => {
         // Play victory fanfare without affecting map music
-        if (scene.sound && scene.sound.context) {
-            try {
-                // Stop battle music first
-                if (scene.battleMusic && scene.battleMusic.isPlaying) {
-                    scene.battleMusic.stop();
-                }
-                // Stop and clean up any existing victory sound
-                if (scene.victorySound) {
-                    scene.victorySound.stop();
-                    scene.victorySound.destroy();
-                }
-                // Create fresh victory sound
-                scene.victorySound = scene.sound.add('victory-fanfare', {
-                    loop: false,
-                    volume: 0.6
-                });
-                scene.victorySound.play();
-
-                // Auto-stop after 5 seconds for shorter duration
-                scene.time.delayedCall(5000, () => {
-                    if (scene.victorySound && scene.victorySound.isPlaying) {
-                        scene.victorySound.stop();
+        if (scene.sound && scene.sound.context && scene.musicManager) {
+            const requestToken = ++scene.pendingResultAudioToken;
+            scene.musicManager.ensureTrackLoaded('victoryFanfare')
+                .then(() => {
+                    if (!scene.sys?.isActive() || !scene.battleActive || requestToken !== scene.pendingResultAudioToken) {
+                        return;
                     }
-                });
-            } catch (e) {
-                console.warn('Failed to play victory sound:', e);
-            }
+                    try {
+                        if (scene.battleMusic && scene.battleMusic.isPlaying) {
+                            scene.battleMusic.stop();
+                        }
+                        if (scene.victorySound) {
+                            scene.victorySound.stop();
+                            scene.victorySound.destroy();
+                        }
+                        scene.victorySound = scene.sound.add('victory-fanfare', {
+                            loop: false,
+                            volume: 0.6
+                        });
+                        scene.victorySound.play();
+
+                        scene.time.delayedCall(5000, () => {
+                            if (scene.victorySound && scene.victorySound.isPlaying) {
+                                scene.victorySound.stop();
+                            }
+                        });
+                    } catch (e) {
+                        console.warn('Failed to play victory sound:', e);
+                    }
+                })
+                .catch((error) => console.warn(error.message));
         }
     });
 
     scene.bindEvent('play-defeat-sound', () => {
         // Play defeat music without affecting map music
-        if (scene.sound && scene.sound.context) {
-            try {
-                // Stop battle music first
-                if (scene.battleMusic && scene.battleMusic.isPlaying) {
-                    scene.battleMusic.stop();
-                }
-                // Stop and clean up any existing defeat sound
-                if (scene.defeatSound) {
-                    scene.defeatSound.stop();
-                    scene.defeatSound.destroy();
-                }
-                // Create fresh defeat sound
-                scene.defeatSound = scene.sound.add('defeat-music', {
-                    loop: false,
-                    volume: 0.5
-                });
-                scene.defeatSound.play();
-
-                // Auto-stop after 5 seconds for shorter duration
-                scene.time.delayedCall(5000, () => {
-                    if (scene.defeatSound && scene.defeatSound.isPlaying) {
-                        scene.defeatSound.stop();
+        if (scene.sound && scene.sound.context && scene.musicManager) {
+            const requestToken = ++scene.pendingResultAudioToken;
+            scene.musicManager.ensureTrackLoaded('defeat')
+                .then(() => {
+                    if (!scene.sys?.isActive() || !scene.battleActive || requestToken !== scene.pendingResultAudioToken) {
+                        return;
                     }
-                });
-            } catch (e) {
-                console.warn('Failed to play defeat sound:', e);
-            }
+                    try {
+                        if (scene.battleMusic && scene.battleMusic.isPlaying) {
+                            scene.battleMusic.stop();
+                        }
+                        if (scene.defeatSound) {
+                            scene.defeatSound.stop();
+                            scene.defeatSound.destroy();
+                        }
+                        scene.defeatSound = scene.sound.add('defeat-music', {
+                            loop: false,
+                            volume: 0.5
+                        });
+                        scene.defeatSound.play();
+
+                        scene.time.delayedCall(5000, () => {
+                            if (scene.defeatSound && scene.defeatSound.isPlaying) {
+                                scene.defeatSound.stop();
+                            }
+                        });
+                    } catch (e) {
+                        console.warn('Failed to play defeat sound:', e);
+                    }
+                })
+                .catch((error) => console.warn(error.message));
         }
     });
 
@@ -242,7 +267,7 @@ export const bindOverworldEvents = (scene) => {
         scene.spawnedGuestIndices = [];
         // Clear all NPCs and spawn fresh level 1
         scene.clearAllNPCs();
-        scene.spawnNPCsForLevel(10);
+        scene.loadStageAvatars(scene.currentLevel, () => scene.spawnNPCsForLevel(10));
         // Reset player position
         scene.player.tileX = scene.spawnX || 6;
         scene.player.tileY = scene.spawnY || 4;

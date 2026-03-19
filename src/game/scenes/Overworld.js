@@ -343,8 +343,45 @@ export class Overworld extends Scene
 
     createNPCs ()
     {
-        // Spawn first 10 NPCs for level 1
-        this.spawnNPCsForLevel(10);
+        this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(10));
+    }
+
+    loadStageAvatars(stageNumber, onComplete)
+    {
+        const allGuests = guestDataManager.getSelectedGuests();
+        const opponents = getStageOpponents(stageNumber) || [];
+        const guestsToLoad = allGuests.filter((guest) =>
+            opponents.includes(guest.name)
+            && guest.avatarKey
+            && !this.textures.exists(guest.avatarKey)
+        );
+
+        if (guestsToLoad.length === 0) {
+            onComplete();
+            return;
+        }
+
+        const queue = guestsToLoad.filter((guest) => guestDataManager.generateAvatarPath(guest.name));
+        if (queue.length === 0) {
+            onComplete();
+            return;
+        }
+
+        const onLoadError = (file) => {
+            if (file?.key?.startsWith('avatar-')) {
+                console.warn(`Avatar not found: ${file.src}, using fallback sprite`);
+            }
+        };
+        this.load.once('complete', () => {
+            this.load.off('loaderror', onLoadError);
+            onComplete();
+        });
+        this.load.on('loaderror', onLoadError);
+
+        queue.forEach((guest) => {
+            this.load.image(guest.avatarKey, guestDataManager.generateAvatarPath(guest.name));
+        });
+        this.load.start();
     }
 
     spawnNPCsForLevel(count)
@@ -1046,7 +1083,7 @@ export class Overworld extends Scene
             this.currentSegment = nextSegment;
             this.currentLevel = nextLevel;
             this.clearAllNPCs();
-            this.spawnNPCsForLevel(10);
+            this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(10));
             this.player.tileY = nextY;
             this.player.tileX = nextX;
             this.snapPlayerToTile();

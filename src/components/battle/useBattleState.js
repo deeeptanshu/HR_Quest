@@ -3,6 +3,7 @@ import gameState from '../../game/GameState.js';
 import { EventBus } from '../../game/EventBus';
 import { getGuestTitle } from '../../game/GuestTitles.js';
 import { getGuestTier } from '../../game/StageConfig.js';
+import { getGuestAvatarAssetPath } from '../../game/assets.js';
 
 export const useBattleState = (props, emit, swirlCanvas) => {
     const guestHP = ref(100);
@@ -106,23 +107,7 @@ export const useBattleState = (props, emit, swirlCanvas) => {
 
     const guestAvatarPath = computed(() => {
         if (!props.battleData?.guest?.name) return null;
-        const guestName = props.battleData.guest.name;
-
-        // Special case for Elena - use elena-front.png
-        if (guestName.includes('Elena Verna')) {
-            return `/assets/elena-front.png`;
-        }
-
-        // Transform name to match renamed files (spaces to hyphens, special chars removed)
-        const safeName = guestName
-            .replace(/\s+/g, '-')
-            .replace(/[&+,]/g, '-')
-            .replace(/ö/g, 'o')
-            .replace(/ü/g, 'u')
-            .replace(/ä/g, 'a')
-            .replace(/-+/g, '-');
-
-        return `/assets/avatars/${safeName}_pixel_art.png`;
+        return getGuestAvatarAssetPath(props.battleData.guest.name);
     });
 
     const guestTitle = computed(() => {
