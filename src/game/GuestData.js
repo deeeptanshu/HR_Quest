@@ -125,7 +125,7 @@ class GuestDataManager {
       'Nir Eyal',
       'Des Traynor',
       'Melissa Perri',
-      'Lenny Rachitsky',
+      'EOY Roundup',
       'Reforge',
       'Adam Fishman',
       'Bangaly Kaba',
