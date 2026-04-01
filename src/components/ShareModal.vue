@@ -182,20 +182,20 @@ function shareOnLinkedIn() {
     ? 'Captured Guests: ' + safeGuestNames.join(', ') + (capturedGuests.value.length > 5 ? '...' : '')
     : '';
 
-  const shareText = `Just crushed some HR knowledge battles in HR Quest!
+  const shareText = `Just spent way too long battling HR legends in HR Quest and I have zero regrets.
 
-This is such a fun way to test what you've learned from SHRM HR Podcast - it's like Pokemon but with legendary HR thought leaders and people experts.
+It's a Pokemon-style RPG where you battle real HR thought leaders by answering HR knowledge questions. Win the battle, capture the guest.
 
-My battle stats:
+My stats:
 - Level ${props.stats.level} trainer
 - ${props.stats.totalBattles} battles won
-- ${props.accuracy} percent accuracy
+- ${props.accuracy}% accuracy
 - Captured ${props.capturedCount} of ${props.totalGuests} guests
 ${guestsLine ? '\n' + guestsLine : ''}
 
-If you're a fan of SHRM HR Podcast, you'll love this. Test your HR knowledge and catch 'em all!
+If you follow the SHRM HR podcast and know your HR fundamentals, you'll do well. If you don't - you'll learn fast.
 
-Play now: www.hrquest.fun`;
+Play here: https://hr-quest.vercel.app/`;
 
   const encodedText = encodeURIComponent(shareText);
   const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=${encodedText}`;
