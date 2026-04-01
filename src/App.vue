@@ -734,6 +734,19 @@ onUnmounted(() => {
           <span class="stat-label">Captured</span>
           <span class="stat-value">{{ capturedCount }}/{{ totalGuests }}</span>
         </div>
+
+        <!-- Intervue Ad - below level card -->
+        <div class="intervue-panel">
+          <div class="intervue-badge">⚡ POWERED BY</div>
+          <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-logo-link">
+            <div class="intervue-logo-text">intervue</div>
+            <div class="intervue-tagline">🎯 Hire Like a Pro</div>
+          </a>
+          <div class="intervue-desc">Stop guessing.<br/>Start hiring the <span class="intervue-highlight">right people.</span></div>
+          <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-cta-btn">
+            Try Free →
+          </a>
+        </div>
       </div>
 
       <div class="game-stage">
@@ -763,21 +776,10 @@ onUnmounted(() => {
           <Icon class="btn-icon" :icon="isMuted ? volumeX : volume" />
           {{ isMuted ? 'Unmute' : 'Mute' }}
         </button>
+
       </div>
 
-      <!-- Intervue Sponsor Panel -->
-      <div class="intervue-panel" v-if="currentSceneName === 'Overworld' || !isMobile">
-        <div class="intervue-badge">⚡ POWERED BY</div>
-        <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-logo-link">
-          <div class="intervue-logo-text">intervue</div>
-          <div class="intervue-tagline">🎮 Hire Like a Pro</div>
-        </a>
-        <div class="intervue-desc">Stop guessing.<br/>Start hiring<br/>the <span class="intervue-highlight">right people</span>.</div>
-        <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-cta-btn">
-          Try Free →
-        </a>
-        <div class="intervue-fun-text">🏆 Used by HR<br/>legends like<br/>these →</div>
-      </div>
+
     </div>
 
     <div class="game-footer" v-if="currentSceneName === 'Overworld' || !isMobile">
@@ -1978,17 +1980,17 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  min-width: 150px;
-  max-width: 160px;
-  padding: 16px 12px;
-  background: linear-gradient(160deg, #0f0f1a 0%, #1a1040 100%);
+  width: 100%;
+  padding: 14px 10px;
+  background: #0f0f1a;
   border: 2px solid #7c3aed;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3), inset 0 0 20px rgba(0,0,0,0.3);
+  border-radius: 10px;
   font-family: 'Press Start 2P', monospace;
   image-rendering: pixelated;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 12px;
 }
 
 .intervue-panel::before {
@@ -2084,10 +2086,6 @@ body {
   line-height: 1.8;
 }
 
-@media (max-width: 1100px) {
-  .intervue-panel {
-    display: none;
-  }
-}
+
 
 </style>
