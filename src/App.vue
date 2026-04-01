@@ -764,6 +764,20 @@ onUnmounted(() => {
           {{ isMuted ? 'Unmute' : 'Mute' }}
         </button>
       </div>
+
+      <!-- Intervue Sponsor Panel -->
+      <div class="intervue-panel" v-if="currentSceneName === 'Overworld' || !isMobile">
+        <div class="intervue-badge">⚡ POWERED BY</div>
+        <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-logo-link">
+          <div class="intervue-logo-text">intervue</div>
+          <div class="intervue-tagline">🎮 Hire Like a Pro</div>
+        </a>
+        <div class="intervue-desc">Stop guessing.<br/>Start hiring<br/>the <span class="intervue-highlight">right people</span>.</div>
+        <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-cta-btn">
+          Try Free →
+        </a>
+        <div class="intervue-fun-text">🏆 Used by HR<br/>legends like<br/>these →</div>
+      </div>
     </div>
 
     <div class="game-footer" v-if="currentSceneName === 'Overworld' || !isMobile">
@@ -1957,4 +1971,123 @@ body {
     height: 12px;
   }
 }
+
+/* ── Intervue Sponsor Panel ── */
+.intervue-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+  max-width: 160px;
+  padding: 16px 12px;
+  background: linear-gradient(160deg, #0f0f1a 0%, #1a1040 100%);
+  border: 2px solid #7c3aed;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3), inset 0 0 20px rgba(0,0,0,0.3);
+  font-family: 'Press Start 2P', monospace;
+  image-rendering: pixelated;
+  position: relative;
+  overflow: hidden;
+}
+
+.intervue-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #7c3aed, #a855f7, transparent);
+  animation: scanline 2s linear infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.intervue-badge {
+  font-size: 6px;
+  color: #a855f7;
+  letter-spacing: 1px;
+  border: 1px solid #7c3aed;
+  padding: 3px 6px;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+.intervue-logo-link {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.intervue-logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: -1px;
+  font-family: 'Press Start 2P', monospace;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
+  line-height: 1;
+}
+
+.intervue-tagline {
+  font-size: 7px;
+  color: #a855f7;
+  margin-top: 4px;
+}
+
+.intervue-desc {
+  font-size: 7px;
+  color: #ccccdd;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.intervue-highlight {
+  color: #a855f7;
+  font-size: 7px;
+}
+
+.intervue-cta-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px 6px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #ffffff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #4c1d95;
+  transition: all 0.15s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.intervue-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #4c1d95;
+  background: linear-gradient(135deg, #8b5cf6, #c084fc);
+}
+
+.intervue-cta-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #4c1d95;
+}
+
+.intervue-fun-text {
+  font-size: 6px;
+  color: #665577;
+  text-align: center;
+  line-height: 1.8;
+}
+
+@media (max-width: 1100px) {
+  .intervue-panel {
+    display: none;
+  }
+}
+
 </style>
