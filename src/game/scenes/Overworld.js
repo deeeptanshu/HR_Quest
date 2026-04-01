@@ -343,7 +343,7 @@ export class Overworld extends Scene
 
     createNPCs ()
     {
-        this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(10));
+        this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(5));
     }
 
     loadStageAvatars(stageNumber, onComplete)
@@ -1083,7 +1083,7 @@ export class Overworld extends Scene
             this.currentSegment = nextSegment;
             this.currentLevel = nextLevel;
             this.clearAllNPCs();
-            this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(10));
+            this.loadStageAvatars(this.currentLevel, () => this.spawnNPCsForLevel(5));
             this.player.tileY = nextY;
             this.player.tileX = nextX;
             this.snapPlayerToTile();
