@@ -1164,8 +1164,8 @@ body {
 .game-stage {
   position: relative;
   display: inline-flex;
-  width: 720px;
-  max-width: 60vw;
+  width: 680px;
+  max-width: 58vw;
 }
 
 .map-indicator {
@@ -1192,8 +1192,8 @@ body {
   border: 3px solid #FFD700;
   border-radius: 8px;
   padding: 14px;
-  min-width: 150px;
-  max-width: 155px;
+  min-width: 170px;
+  max-width: 175px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -1265,14 +1265,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 150px;
-  max-width: 155px;
+  min-width: 160px;
+  max-width: 165px;
 }
 
 .action-btn {
   font-family: 'Press Start 2P', monospace, sans-serif;
-  font-size: 10px;
-  padding: 12px 10px;
+  font-size: 9px;
+  padding: 12px 8px;
   background: rgba(0, 0, 0, 0.85);
   color: #fff;
   border: 3px solid #FFD700;
@@ -1354,8 +1354,8 @@ body {
   border: 3px solid #FFD700;
   border-radius: 8px;
   padding: 16px 24px;
-  width: 720px;
-  max-width: 60vw;
+  width: 680px;
+  max-width: 58vw;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1991,7 +1991,7 @@ body {
   font-family: 'Press Start 2P', monospace;
   image-rendering: pixelated;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   box-sizing: border-box;
   margin-top: 12px;
 }
@@ -2027,7 +2027,7 @@ body {
 }
 
 .intervue-logo-text {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   color: #ffffff;
   letter-spacing: -1px;
@@ -2046,7 +2046,7 @@ body {
   font-size: 7px;
   color: #ccccdd;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .intervue-highlight {
