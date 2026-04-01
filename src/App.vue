@@ -1154,17 +1154,18 @@ body {
 
 .game-wrapper {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   align-items: flex-start;
   flex-shrink: 0;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .game-stage {
   position: relative;
   display: inline-flex;
-  width: 960px;
-  max-width: 95vw;
+  width: 720px;
+  max-width: 60vw;
 }
 
 .map-indicator {
@@ -1190,8 +1191,9 @@ body {
   background: rgba(0, 0, 0, 0.85);
   border: 3px solid #FFD700;
   border-radius: 8px;
-  padding: 16px;
-  min-width: 180px;
+  padding: 14px;
+  min-width: 150px;
+  max-width: 155px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -1262,14 +1264,15 @@ body {
 .action-buttons {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-width: 180px;
+  gap: 10px;
+  min-width: 150px;
+  max-width: 155px;
 }
 
 .action-btn {
   font-family: 'Press Start 2P', monospace, sans-serif;
-  font-size: 11px;
-  padding: 14px 16px;
+  font-size: 10px;
+  padding: 12px 10px;
   background: rgba(0, 0, 0, 0.85);
   color: #fff;
   border: 3px solid #FFD700;
@@ -1351,8 +1354,8 @@ body {
   border: 3px solid #FFD700;
   border-radius: 8px;
   padding: 16px 24px;
-  width: 960px;
-  max-width: 95vw;
+  width: 720px;
+  max-width: 60vw;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1407,7 +1410,7 @@ body {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1100px) {
   .game-wrapper {
     flex-wrap: wrap;
     justify-content: center;
@@ -1425,7 +1428,7 @@ body {
     flex-direction: row;
     min-width: auto;
     width: 100%;
-    max-width: 960px;
+    max-width: 720px;
     justify-content: space-around;
   }
 
@@ -1979,9 +1982,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
-  padding: 14px 10px;
+  padding: 12px 8px;
   background: #0f0f1a;
   border: 2px solid #7c3aed;
   border-radius: 10px;
