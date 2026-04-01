@@ -735,18 +735,6 @@ onUnmounted(() => {
           <span class="stat-value">{{ capturedCount }}/{{ totalGuests }}</span>
         </div>
 
-        <!-- Intervue Ad - below level card -->
-        <div class="intervue-panel">
-          <div class="intervue-badge">⚡ POWERED BY</div>
-          <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-logo-link">
-            <div class="intervue-logo-text">intervue</div>
-            <div class="intervue-tagline">🎯 Hire Like a Pro</div>
-          </a>
-          <div class="intervue-desc">Stop guessing.<br/>Start hiring the <span class="intervue-highlight">right people.</span></div>
-          <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-cta-btn">
-            Try Free →
-          </a>
-        </div>
       </div>
 
       <div class="game-stage">
@@ -776,6 +764,14 @@ onUnmounted(() => {
           <Icon class="btn-icon" :icon="isMuted ? volumeX : volume" />
           {{ isMuted ? 'Unmute' : 'Mute' }}
         </button>
+
+        <!-- Intervue Ad -->
+        <a href="https://intervue.io" target="_blank" rel="noopener noreferrer" class="intervue-panel">
+          <div class="intervue-badge">⚡ POWERED BY</div>
+          <div class="intervue-logo-text">intervue</div>
+          <div class="intervue-tagline">AI-powered interviews.<br/>Hire the right people.</div>
+          <div class="intervue-cta-btn">Try Free →</div>
+        </a>
 
       </div>
 
@@ -1982,111 +1978,72 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
-  padding: 12px 8px;
-  background: #0f0f1a;
-  border: 2px solid #7c3aed;
+  padding: 16px 12px;
+  background: #5b21b6;
+  border: 2px solid #a855f7;
   border-radius: 10px;
   font-family: 'Press Start 2P', monospace;
-  image-rendering: pixelated;
-  position: relative;
-  overflow: visible;
   box-sizing: border-box;
-  margin-top: 12px;
+  margin-top: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 0 #3b0764, 0 0 20px rgba(168, 85, 247, 0.35);
 }
 
-.intervue-panel::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, transparent, #7c3aed, #a855f7, transparent);
-  animation: scanline 2s linear infinite;
-}
-
-@keyframes scanline {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+.intervue-panel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #3b0764, 0 0 30px rgba(168, 85, 247, 0.5);
 }
 
 .intervue-badge {
-  font-size: 6px;
-  color: #a855f7;
-  letter-spacing: 1px;
-  border: 1px solid #7c3aed;
-  padding: 3px 6px;
-  border-radius: 3px;
-  width: 100%;
+  font-size: 7px;
+  color: #e9d5ff;
+  letter-spacing: 2px;
+  opacity: 0.85;
   text-align: center;
-}
-
-.intervue-logo-link {
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
 }
 
 .intervue-logo-text {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 18px;
   color: #ffffff;
   letter-spacing: -1px;
   font-family: 'Press Start 2P', monospace;
-  text-shadow: 0 0 10px rgba(168, 85, 247, 0.8);
   line-height: 1;
+  text-shadow: 0 2px 0 #3b0764;
 }
 
 .intervue-tagline {
   font-size: 7px;
-  color: #a855f7;
-  margin-top: 4px;
-}
-
-.intervue-desc {
-  font-size: 7px;
-  color: #ccccdd;
+  color: #e9d5ff;
   text-align: center;
-  line-height: 1.6;
-}
-
-.intervue-highlight {
-  color: #a855f7;
-  font-size: 7px;
+  line-height: 1.8;
+  opacity: 0.9;
 }
 
 .intervue-cta-btn {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 8px 6px;
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
-  color: #ffffff;
+  padding: 10px 8px;
+  background: #ffffff;
+  color: #5b21b6;
   font-family: 'Press Start 2P', monospace;
-  font-size: 9px;
+  font-size: 10px;
   border-radius: 6px;
   text-decoration: none;
-  box-shadow: 0 4px 0 #4c1d95;
+  font-weight: bold;
+  box-shadow: 0 3px 0 #c4b5fd;
   transition: all 0.15s ease;
-  border: none;
-  cursor: pointer;
+  margin-top: 2px;
 }
 
-.intervue-cta-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 #4c1d95;
-  background: linear-gradient(135deg, #8b5cf6, #c084fc);
-}
-
-.intervue-cta-btn:active {
+.intervue-panel:hover .intervue-cta-btn {
+  background: #f5f3ff;
+  box-shadow: 0 1px 0 #c4b5fd;
   transform: translateY(2px);
-  box-shadow: 0 2px 0 #4c1d95;
-}
-
-.intervue-fun-text {
-  font-size: 6px;
-  color: #665577;
-  text-align: center;
-  line-height: 1.8;
 }
 
 
