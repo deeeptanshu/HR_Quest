@@ -70,7 +70,7 @@ const encounterMessages = [
   "is looking for a sparring partner!",
   "waves you over!",
   "spotted you and smiles!",
-  "wants to talk product!",
+  "wants to talk people strategy!",
   "is up for a quick challenge!",
   "invites you to a knowledge duel!",
   "wants to compare notes!",
@@ -95,7 +95,7 @@ const encounterMessages = [
   "is ready to test ideas!",
   "wants your best answer!",
   "is ready to hear your reasoning!",
-  "has a question from the podcast!",
+  "has an HR challenge for you!",
   "is ready for a quick round!",
   "would like your opinion!",
   "is ready to explore an idea!"
