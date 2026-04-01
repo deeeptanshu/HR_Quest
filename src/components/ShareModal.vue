@@ -7,7 +7,7 @@
         <button class="card-close-btn export-exclude" @click="closeModal">×</button>
         <!-- Header -->
         <div class="card-header">
-          <h2 class="card-title">LennyRPG</h2>
+          <h2 class="card-title">HR Quest</h2>
           <p class="card-subtitle">Trainer Card</p>
         </div>
 
@@ -94,7 +94,7 @@
 
         <!-- Footer -->
         <div class="card-footer">
-          <p class="footer-text">Play LennyRPG at www.lennyrpg.fun</p>
+          <p class="footer-text">Play HR Quest at www.hrquest.fun</p>
         </div>
       </div>
 
@@ -182,9 +182,9 @@ function shareOnLinkedIn() {
     ? 'Captured Guests: ' + safeGuestNames.join(', ') + (capturedGuests.value.length > 5 ? '...' : '')
     : '';
 
-  const shareText = `Just crushed some product knowledge battles in LennyRPG!
+  const shareText = `Just crushed some HR knowledge battles in HR Quest!
 
-This is such a fun way to test what you've learned from Lenny's Podcast - it's like Pokemon but with legendary product leaders and growth experts.
+This is such a fun way to test what you've learned from SHRM HR Podcast - it's like Pokemon but with legendary HR thought leaders and people experts.
 
 My battle stats:
 - Level ${props.stats.level} trainer
@@ -193,9 +193,9 @@ My battle stats:
 - Captured ${props.capturedCount} of ${props.totalGuests} guests
 ${guestsLine ? '\n' + guestsLine : ''}
 
-If you're a fan of Lenny's Podcast, you'll love this. Test your product knowledge and catch 'em all!
+If you're a fan of SHRM HR Podcast, you'll love this. Test your HR knowledge and catch 'em all!
 
-Play now: www.lennyrpg.fun`;
+Play now: www.hrquest.fun`;
 
   const encodedText = encodeURIComponent(shareText);
   const linkedInUrl = `https://www.linkedin.com/feed/?shareActive=true&text=${encodedText}`;
@@ -220,7 +220,7 @@ async function downloadCard() {
       useCORS: true
     });
     const link = document.createElement('a');
-    link.download = `lennyrpg-${props.playerName || 'player'}-card.png`;
+    link.download = `hrquest-${props.playerName || 'player'}-card.png`;
     link.href = canvas.toDataURL('image/png');
     link.click();
   } catch (error) {
