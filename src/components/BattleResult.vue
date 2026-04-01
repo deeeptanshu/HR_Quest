@@ -416,21 +416,21 @@ function handleContainerClick(event) {
 
 /* Buttons */
 .action-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 15px;
   justify-content: center;
+  width: 100%;
 }
 
 .action-buttons.single {
-  grid-template-columns: minmax(0, 240px);
   justify-content: center;
 }
 
 .result-btn {
   font-family: 'Press Start 2P', monospace;
-  font-size: 14px;
-  padding: 15px 30px;
+  font-size: 13px;
+  padding: 15px 20px;
   border: 4px solid;
   border-radius: 10px;
   cursor: pointer;
@@ -439,9 +439,10 @@ function handleContainerClick(event) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap;
-  width: 100%;
+  flex: 1;
+  max-width: 220px;
   touch-action: manipulation;
 }
 
@@ -521,17 +522,17 @@ function handleContainerClick(event) {
   .result-btn {
     font-size: 9px;
     padding: 10px 8px;
-    flex: 1 1 0;
-    min-width: 0;
+    flex: 1;
+    max-width: 160px;
   }
 
   .action-buttons {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex-direction: row;
     gap: 10px;
   }
 
   .action-buttons.single {
-    grid-template-columns: minmax(0, 200px);
+    justify-content: center;
   }
 
   .episode-link {
