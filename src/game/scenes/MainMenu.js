@@ -150,7 +150,7 @@ export class MainMenu extends Scene
             strokeThickness: 4
         }).setOrigin(0.5);
 
-        this.add.text(this.scale.width / 2, 280, 'Prove your product knowledge. Win battles. Capture guests.', {
+        this.add.text(this.scale.width / 2, 280, 'Battle HR legends. Test your people knowledge. Catch \'em all.', {
             fontFamily: '"Press Start 2P"',
             fontSize: '13px',
             color: '#FFFFFF',
