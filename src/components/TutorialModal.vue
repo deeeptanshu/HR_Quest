@@ -11,7 +11,7 @@
           <div class="instruction-number">1</div>
           <div class="instruction-text">
             <h3>Use Arrow keys or WASD to move</h3>
-            <p>Walk around the map to find podcast guests.</p>
+            <p>Walk around the map to find HR experts.</p>
           </div>
         </div>
 
