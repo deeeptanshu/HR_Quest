@@ -141,7 +141,7 @@ export class MainMenu extends Scene
         });
 
         // Info text - warm golden color matching logo (reduced sizes)
-        this.add.text(this.scale.width / 2, 250, 'CAPTURE LENNY’S PODCAST GUESTS', {
+        this.add.text(this.scale.width / 2, 250, 'BATTLE THE HR EXPERTS', {
             fontFamily: '"Press Start 2P"',
             fontSize: '16px',
             color: '#FFE066', // Warm yellow from logo
