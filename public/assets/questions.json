@@ -8,35 +8,60 @@
       "questions": [
         {
           "question": "What does Dave Ulrich call the shift from HR being activity-focused to outcome-focused?",
-          "choices": ["HR digitization", "The HR value chain", "Outside-in thinking", "HR automation"],
+          "choices": [
+            "Outside-in thinking",
+            "The HR value chain",
+            "HR digitization",
+            "HR automation"
+          ],
           "answer": "Outside-in thinking",
-          "explanation": "Ulrich argues HR must work backward from business outcomes, customer needs, and investor expectations — not just internal processes.",
+          "explanation": "Ulrich argues HR must work backward from business outcomes, customer needs, and investor expectations \u2014 not just internal processes.",
           "difficulty": "Medium"
         },
         {
           "question": "In Ulrich's HR competency model, which role focuses on translating business strategy into people practices?",
-          "choices": ["Employee champion", "Strategic positioner", "Change agent", "Administrative expert"],
+          "choices": [
+            "Employee champion",
+            "Strategic positioner",
+            "Change agent",
+            "Administrative expert"
+          ],
           "answer": "Strategic positioner",
           "explanation": "The strategic positioner role requires HR leaders to understand external business context and align talent strategy accordingly.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Ulrich identify as the #1 measure of HR effectiveness?",
-          "choices": ["Employee satisfaction scores", "HR cost per employee", "Impact on business results", "Speed of hiring"],
+          "choices": [
+            "Employee satisfaction scores",
+            "HR cost per employee",
+            "Impact on business results",
+            "Speed of hiring"
+          ],
           "answer": "Impact on business results",
           "explanation": "Ulrich consistently argues that HR must be measured by its contribution to business outcomes, not internal HR metrics.",
           "difficulty": "Easy"
         },
         {
           "question": "What term did Dave Ulrich popularize to describe HR professionals who support business units directly?",
-          "choices": ["HR Director", "HR Business Partner", "People Operations Lead", "Talent Advisor"],
+          "choices": [
+            "HR Director",
+            "Talent Advisor",
+            "People Operations Lead",
+            "HR Business Partner"
+          ],
           "answer": "HR Business Partner",
           "explanation": "Ulrich introduced the HRBP model in the 1990s as part of his three-legged stool HR operating model.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Ulrich, what is the primary source of competitive advantage in the modern economy?",
-          "choices": ["Proprietary technology", "Lower labor costs", "Organizational capability", "Brand recognition"],
+          "choices": [
+            "Organizational capability",
+            "Lower labor costs",
+            "Proprietary technology",
+            "Brand recognition"
+          ],
           "answer": "Organizational capability",
           "explanation": "Ulrich argues that the ability to attract, develop, and retain talent is a harder-to-copy advantage than technology or capital.",
           "difficulty": "Medium"
@@ -51,35 +76,60 @@
       "questions": [
         {
           "question": "What famous internal document did Patty McCord co-author at Netflix?",
-          "choices": ["The Netflix Growth Manual", "The Culture Deck", "The Talent Playbook", "The Freedom Framework"],
+          "choices": [
+            "The Netflix Growth Manual",
+            "The Culture Deck",
+            "The Talent Playbook",
+            "The Freedom Framework"
+          ],
           "answer": "The Culture Deck",
           "explanation": "The Netflix Culture Deck, co-authored by McCord and Reed Hastings, became one of the most influential HR documents in Silicon Valley.",
           "difficulty": "Easy"
         },
         {
           "question": "What is Patty McCord's core argument about annual performance reviews?",
-          "choices": ["They should be more frequent", "They are essential for compliance", "They are largely a waste of time", "They should be peer-led"],
+          "choices": [
+            "They should be more frequent",
+            "They are essential for compliance",
+            "They are largely a waste of time",
+            "They should be peer-led"
+          ],
           "answer": "They are largely a waste of time",
-          "explanation": "McCord argues that honest, real-time feedback replaces the need for formal annual reviews — which she says rarely change behavior.",
+          "explanation": "McCord argues that honest, real-time feedback replaces the need for formal annual reviews \u2014 which she says rarely change behavior.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Patty McCord, what should companies do when an employee's role has been outgrown by the business?",
-          "choices": ["Retrain them immediately", "Give them a lateral move", "Have an honest conversation and part ways well", "Promote them to a new role"],
+          "choices": [
+            "Retrain them immediately",
+            "Give them a lateral move",
+            "Promote them to a new role",
+            "Have an honest conversation and part ways well"
+          ],
           "answer": "Have an honest conversation and part ways well",
           "explanation": "McCord advocates for treating departures as natural business transitions rather than failures, handled with honesty and respect.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Patty McCord say is the biggest mistake companies make with perks and benefits?",
-          "choices": ["Spending too much on them", "Using them as substitutes for meaningful work and pay", "Not communicating their value", "Making them too complex to use"],
+          "choices": [
+            "Using them as substitutes for meaningful work and pay",
+            "Spending too much on them",
+            "Not communicating their value",
+            "Making them too complex to use"
+          ],
           "answer": "Using them as substitutes for meaningful work and pay",
           "explanation": "McCord argues that perks like ping pong tables and free food are poor substitutes for competitive salaries and engaging work.",
           "difficulty": "Hard"
         },
         {
           "question": "What hiring philosophy does Patty McCord advocate for when building teams?",
-          "choices": ["Always promote from within", "Hire for today's problem, not tomorrow's hope", "Prioritize culture fit above all", "Hire slow, fire slow"],
+          "choices": [
+            "Always promote from within",
+            "Hire for today's problem, not tomorrow's hope",
+            "Prioritize culture fit above all",
+            "Hire slow, fire slow"
+          ],
           "answer": "Hire for today's problem, not tomorrow's hope",
           "explanation": "McCord argues companies often hire people for what they might become, when they should hire for the specific problem at hand right now.",
           "difficulty": "Hard"
@@ -94,35 +144,60 @@
       "questions": [
         {
           "question": "What did Google's Project Oxygen research identify as the #1 quality of great managers?",
-          "choices": ["Technical expertise", "Being a good coach", "High IQ", "Strong decisiveness"],
+          "choices": [
+            "Technical expertise",
+            "High IQ",
+            "Being a good coach",
+            "Strong decisiveness"
+          ],
           "answer": "Being a good coach",
-          "explanation": "Google's data-driven research found that coaching — not technical skill — was the top differentiator of high-performing managers.",
+          "explanation": "Google's data-driven research found that coaching \u2014 not technical skill \u2014 was the top differentiator of high-performing managers.",
           "difficulty": "Medium"
         },
         {
           "question": "What interviewing technique did Google popularize based on Laszlo Bock's work?",
-          "choices": ["Case interviews", "Stress testing", "Structured behavioral interviews", "Work sample tests"],
+          "choices": [
+            "Case interviews",
+            "Stress testing",
+            "Work sample tests",
+            "Structured behavioral interviews"
+          ],
           "answer": "Structured behavioral interviews",
           "explanation": "Bock championed structured interviews with consistent questions and rubrics as far more predictive than unstructured conversations.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Laszlo Bock, what is the biggest predictor of job performance?",
-          "choices": ["Years of experience", "GPA from a top university", "General cognitive ability", "Industry certifications"],
+          "choices": [
+            "General cognitive ability",
+            "GPA from a top university",
+            "Years of experience",
+            "Industry certifications"
+          ],
           "answer": "General cognitive ability",
           "explanation": "Bock cites research showing that the ability to learn and solve new problems is the strongest predictor of success across roles.",
           "difficulty": "Hard"
         },
         {
           "question": "What did Google find about the value of brainteasers in job interviews?",
-          "choices": ["They are highly predictive", "They only work for engineering roles", "They are worthless as a hiring tool", "They reduce unconscious bias"],
+          "choices": [
+            "They are highly predictive",
+            "They are worthless as a hiring tool",
+            "They only work for engineering roles",
+            "They reduce unconscious bias"
+          ],
           "answer": "They are worthless as a hiring tool",
           "explanation": "Google's internal data found zero correlation between brainteaser performance and on-the-job success.",
           "difficulty": "Medium"
         },
         {
           "question": "What is Bock's recommended ratio of positive to critical feedback in performance conversations?",
-          "choices": ["1:1", "3:1", "5:1", "10:1"],
+          "choices": [
+            "1:1",
+            "5:1",
+            "3:1",
+            "10:1"
+          ],
           "answer": "3:1",
           "explanation": "Research Bock cites suggests a 3:1 ratio of positive to constructive feedback creates the optimal conditions for growth and engagement.",
           "difficulty": "Hard"
@@ -137,37 +212,62 @@
       "questions": [
         {
           "question": "What does Josh Bersin call companies that excel at connecting employees to learning, growth, and purpose?",
-          "choices": ["Talent-first companies", "Irresistible organizations", "People-centric firms", "Learning enterprises"],
+          "choices": [
+            "Talent-first companies",
+            "Learning enterprises",
+            "People-centric firms",
+            "Irresistible organizations"
+          ],
           "answer": "Irresistible organizations",
           "explanation": "Bersin's research framework identifies 'irresistible organizations' as those where employees genuinely want to work and stay.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Bersin's research, what is the #1 driver of employee engagement globally?",
-          "choices": ["Compensation", "Manager quality", "Sense of belonging and inclusion", "Career development opportunities"],
+          "choices": [
+            "Sense of belonging and inclusion",
+            "Manager quality",
+            "Compensation",
+            "Career development opportunities"
+          ],
           "answer": "Sense of belonging and inclusion",
-          "explanation": "Bersin's Big Reset research found belonging — feeling seen, heard, and valued — consistently tops engagement driver lists worldwide.",
+          "explanation": "Bersin's Big Reset research found belonging \u2014 feeling seen, heard, and valued \u2014 consistently tops engagement driver lists worldwide.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Bersin identify as the core shift in modern talent management?",
-          "choices": ["From HR software to AI", "From managing people to managing work", "From annual goals to OKRs", "From offices to remote work"],
+          "choices": [
+            "From HR software to AI",
+            "From managing people to managing work",
+            "From annual goals to OKRs",
+            "From offices to remote work"
+          ],
           "answer": "From managing people to managing work",
           "explanation": "Bersin argues the fundamental shift is from organizing around people and roles to organizing around skills, projects, and outcomes.",
           "difficulty": "Hard"
         },
         {
           "question": "What hiring approach does Bersin say is replacing traditional job-based hiring?",
-          "choices": ["Network-based hiring", "Skills-based hiring", "Culture-fit hiring", "Algorithm-based hiring"],
+          "choices": [
+            "Network-based hiring",
+            "Culture-fit hiring",
+            "Skills-based hiring",
+            "Algorithm-based hiring"
+          ],
           "answer": "Skills-based hiring",
           "explanation": "Bersin's research shows leading companies are dropping degree requirements and job title matching in favor of skills assessment.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Bersin, what is the biggest mistake companies make with HR technology?",
-          "choices": ["Buying too many tools", "Implementing without a people strategy", "Not involving IT", "Using legacy systems"],
+          "choices": [
+            "Buying too many tools",
+            "Using legacy systems",
+            "Not involving IT",
+            "Implementing without a people strategy"
+          ],
           "answer": "Implementing without a people strategy",
-          "explanation": "Bersin argues that technology amplifies existing processes — so HR tech without a clear people strategy just scales the wrong things faster.",
+          "explanation": "Bersin argues that technology amplifies existing processes \u2014 so HR tech without a clear people strategy just scales the wrong things faster.",
           "difficulty": "Medium"
         }
       ]
@@ -180,35 +280,60 @@
       "questions": [
         {
           "question": "Who coined the term 'psychological safety' in organizational research?",
-          "choices": ["Amy Edmondson", "Adam Grant", "Brené Brown", "Carol Dweck"],
+          "choices": [
+            "Amy Edmondson",
+            "Adam Grant",
+            "Bren\u00e9 Brown",
+            "Carol Dweck"
+          ],
           "answer": "Amy Edmondson",
           "explanation": "Edmondson introduced and defined psychological safety in her 1999 study of medical teams, later popularized by Google's Project Aristotle.",
           "difficulty": "Easy"
         },
         {
           "question": "What does psychological safety NOT mean, according to Amy Edmondson?",
-          "choices": ["Freedom to speak up", "A comfortable, conflict-free environment", "Candor without fear of punishment", "Trust in the team"],
+          "choices": [
+            "Freedom to speak up",
+            "Candor without fear of punishment",
+            "A comfortable, conflict-free environment",
+            "Trust in the team"
+          ],
           "answer": "A comfortable, conflict-free environment",
-          "explanation": "Edmondson explicitly states psychological safety is not about comfort — it's about the willingness to take interpersonal risks like speaking up.",
+          "explanation": "Edmondson explicitly states psychological safety is not about comfort \u2014 it's about the willingness to take interpersonal risks like speaking up.",
           "difficulty": "Medium"
         },
         {
           "question": "What did Google's Project Aristotle find was the #1 predictor of high-performing teams?",
-          "choices": ["Individual IQ of team members", "Psychological safety", "Clear goals and roles", "Team tenure together"],
+          "choices": [
+            "Individual IQ of team members",
+            "Psychological safety",
+            "Clear goals and roles",
+            "Team tenure together"
+          ],
           "answer": "Psychological safety",
-          "explanation": "Google's research validated Edmondson's work — psychological safety was the single most important factor in team effectiveness.",
+          "explanation": "Google's research validated Edmondson's work \u2014 psychological safety was the single most important factor in team effectiveness.",
           "difficulty": "Easy"
         },
         {
           "question": "What is the leader's most critical behavior for building psychological safety, per Edmondson?",
-          "choices": ["Setting high performance standards", "Modeling fallibility — admitting mistakes openly", "Conducting anonymous surveys", "Rewarding risk-taking financially"],
-          "answer": "Modeling fallibility — admitting mistakes openly",
+          "choices": [
+            "Setting high performance standards",
+            "Rewarding risk-taking financially",
+            "Conducting anonymous surveys",
+            "Modeling fallibility \u2014 admitting mistakes openly"
+          ],
+          "answer": "Modeling fallibility \u2014 admitting mistakes openly",
           "explanation": "Edmondson's research shows that leaders who openly admit errors signal to the team that it's safe to do the same.",
           "difficulty": "Medium"
         },
         {
           "question": "Edmondson's research shows psychological safety is MOST valuable in what type of work context?",
-          "choices": ["Routine, process-driven tasks", "Solo individual contributor work", "Complex, uncertain, interdependent work", "Customer-facing sales roles"],
+          "choices": [
+            "Routine, process-driven tasks",
+            "Solo individual contributor work",
+            "Complex, uncertain, interdependent work",
+            "Customer-facing sales roles"
+          ],
           "answer": "Complex, uncertain, interdependent work",
           "explanation": "In predictable environments, safety matters less. In complex, volatile contexts where teams must learn and adapt, it becomes critical.",
           "difficulty": "Hard"
@@ -223,37 +348,62 @@
       "questions": [
         {
           "question": "What organization does Johnny C. Taylor Jr. lead as President and CEO?",
-          "choices": ["HRPA", "SHRM", "WorldatWork", "CIPD"],
+          "choices": [
+            "HRPA",
+            "SHRM",
+            "WorldatWork",
+            "CIPD"
+          ],
           "answer": "SHRM",
           "explanation": "Taylor has led the Society for Human Resource Management (SHRM), the world's largest HR professional association, since 2017.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Taylor argue is HR's biggest opportunity in the AI era?",
-          "choices": ["Automating payroll and benefits", "Repositioning HR as a strategic business driver", "Replacing recruiting with algorithms", "Reducing headcount through automation"],
+          "choices": [
+            "Automating payroll and benefits",
+            "Reducing headcount through automation",
+            "Replacing recruiting with algorithms",
+            "Repositioning HR as a strategic business driver"
+          ],
           "answer": "Repositioning HR as a strategic business driver",
           "explanation": "Taylor argues AI can handle administrative HR work, freeing people professionals to focus on strategy, culture, and human judgment.",
           "difficulty": "Medium"
         },
         {
           "question": "What key workforce trend does Taylor highlight as reshaping the HR function?",
-          "choices": ["The rise of the gig economy only", "The convergence of employee and employer expectations", "The decline of benefits packages", "The shift to four-day work weeks"],
+          "choices": [
+            "The convergence of employee and employer expectations",
+            "The rise of the gig economy only",
+            "The decline of benefits packages",
+            "The shift to four-day work weeks"
+          ],
           "answer": "The convergence of employee and employer expectations",
-          "explanation": "Taylor emphasizes that today's workforce demands purpose, flexibility, and growth — which now align more with what businesses need too.",
+          "explanation": "Taylor emphasizes that today's workforce demands purpose, flexibility, and growth \u2014 which now align more with what businesses need too.",
           "difficulty": "Hard"
         },
         {
           "question": "According to Taylor, what should HR prioritize when implementing AI tools?",
-          "choices": ["Speed of deployment", "Cost savings above all", "Ethical governance and fairness", "Vendor reputation"],
+          "choices": [
+            "Speed of deployment",
+            "Cost savings above all",
+            "Ethical governance and fairness",
+            "Vendor reputation"
+          ],
           "answer": "Ethical governance and fairness",
-          "explanation": "Taylor consistently advocates for HR leading on AI ethics — ensuring tools don't introduce bias or harm workers.",
+          "explanation": "Taylor consistently advocates for HR leading on AI ethics \u2014 ensuring tools don't introduce bias or harm workers.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Taylor say is the most important thing HR can do to earn executive credibility?",
-          "choices": ["Report more HR metrics to leadership", "Speak the language of business outcomes", "Reduce HR headcount", "Implement enterprise HR software"],
+          "choices": [
+            "Report more HR metrics to leadership",
+            "Implement enterprise HR software",
+            "Reduce HR headcount",
+            "Speak the language of business outcomes"
+          ],
           "answer": "Speak the language of business outcomes",
-          "explanation": "Taylor argues HR professionals must connect people strategies to revenue, growth, and profitability — not just HR-specific KPIs.",
+          "explanation": "Taylor argues HR professionals must connect people strategies to revenue, growth, and profitability \u2014 not just HR-specific KPIs.",
           "difficulty": "Easy"
         }
       ]
@@ -266,37 +416,62 @@
       "questions": [
         {
           "question": "What is the core concept in Kim Scott's management framework?",
-          "choices": ["Servant Leadership", "Radical Candor", "Psychological Safety", "Situational Leadership"],
+          "choices": [
+            "Servant Leadership",
+            "Psychological Safety",
+            "Radical Candor",
+            "Situational Leadership"
+          ],
           "answer": "Radical Candor",
           "explanation": "Radical Candor is Scott's framework for giving feedback that is simultaneously caring personally and challenging directly.",
           "difficulty": "Easy"
         },
         {
           "question": "In Kim Scott's 2x2 framework, what do the two axes represent?",
-          "choices": ["Speed and accuracy", "Care personally and challenge directly", "Trust and transparency", "Results and relationships"],
+          "choices": [
+            "Care personally and challenge directly",
+            "Speed and accuracy",
+            "Trust and transparency",
+            "Results and relationships"
+          ],
           "answer": "Care personally and challenge directly",
           "explanation": "Scott's Radical Candor model plots feedback styles on two axes: how much you care about the person and how directly you challenge them.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Kim Scott call feedback that is honest and direct but delivered without caring about the person?",
-          "choices": ["Radical Candor", "Obnoxious Aggression", "Ruinous Empathy", "Manipulative Insincerity"],
+          "choices": [
+            "Radical Candor",
+            "Manipulative Insincerity",
+            "Ruinous Empathy",
+            "Obnoxious Aggression"
+          ],
           "answer": "Obnoxious Aggression",
-          "explanation": "Obnoxious Aggression is the upper-left quadrant — direct challenge without personal care. It's honest but unnecessarily harsh.",
+          "explanation": "Obnoxious Aggression is the upper-left quadrant \u2014 direct challenge without personal care. It's honest but unnecessarily harsh.",
           "difficulty": "Medium"
         },
         {
-          "question": "What does Scott identify as the most common management failure — caring about someone but failing to give honest feedback?",
-          "choices": ["Radical Candor", "Obnoxious Aggression", "Ruinous Empathy", "Manipulative Insincerity"],
+          "question": "What does Scott identify as the most common management failure \u2014 caring about someone but failing to give honest feedback?",
+          "choices": [
+            "Radical Candor",
+            "Ruinous Empathy",
+            "Obnoxious Aggression",
+            "Manipulative Insincerity"
+          ],
           "answer": "Ruinous Empathy",
-          "explanation": "Ruinous Empathy — being too kind to say hard truths — is the most common failure Scott sees in managers, and the most harmful long-term.",
+          "explanation": "Ruinous Empathy \u2014 being too kind to say hard truths \u2014 is the most common failure Scott sees in managers, and the most harmful long-term.",
           "difficulty": "Hard"
         },
         {
           "question": "According to Kim Scott, what is the proper order for soliciting and giving feedback?",
-          "choices": ["Give feedback first, then ask for it", "Ask for feedback before giving it", "Give and receive simultaneously", "Separate feedback from performance reviews"],
+          "choices": [
+            "Ask for feedback before giving it",
+            "Give feedback first, then ask for it",
+            "Give and receive simultaneously",
+            "Separate feedback from performance reviews"
+          ],
           "answer": "Ask for feedback before giving it",
-          "explanation": "Scott recommends soliciting feedback first — it models vulnerability, builds trust, and makes the other person more receptive to your feedback.",
+          "explanation": "Scott recommends soliciting feedback first \u2014 it models vulnerability, builds trust, and makes the other person more receptive to your feedback.",
           "difficulty": "Hard"
         }
       ]
@@ -309,37 +484,62 @@
       "questions": [
         {
           "question": "What is the central argument of Marcus Buckingham's strengths-based management philosophy?",
-          "choices": ["Fix weaknesses to become well-rounded", "Build on what people do naturally well", "Balance all competencies equally", "Focus on technical skill development"],
+          "choices": [
+            "Fix weaknesses to become well-rounded",
+            "Focus on technical skill development",
+            "Balance all competencies equally",
+            "Build on what people do naturally well"
+          ],
           "answer": "Build on what people do naturally well",
-          "explanation": "Buckingham's core thesis: great managers don't try to fix weaknesses — they identify and amplify each person's unique strengths.",
+          "explanation": "Buckingham's core thesis: great managers don't try to fix weaknesses \u2014 they identify and amplify each person's unique strengths.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Buckingham define as a 'strength' in his framework?",
-          "choices": ["Something you are good at", "An activity that strengthens you — makes you feel energized", "A skill confirmed by peers", "A competency above the 90th percentile"],
-          "answer": "An activity that strengthens you — makes you feel energized",
-          "explanation": "Buckingham's definition is counterintuitive: a strength is not just something you're good at — it's something that makes you feel stronger when you do it.",
+          "choices": [
+            "Something you are good at",
+            "An activity that strengthens you \u2014 makes you feel energized",
+            "A skill confirmed by peers",
+            "A competency above the 90th percentile"
+          ],
+          "answer": "An activity that strengthens you \u2014 makes you feel energized",
+          "explanation": "Buckingham's definition is counterintuitive: a strength is not just something you're good at \u2014 it's something that makes you feel stronger when you do it.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Buckingham's research on team performance identify as the single biggest factor?",
-          "choices": ["Team size", "Manager quality", "Individual talent", "Company culture"],
+          "choices": [
+            "Team size",
+            "Individual talent",
+            "Manager quality",
+            "Company culture"
+          ],
           "answer": "Manager quality",
           "explanation": "Buckingham's landmark Gallup research found that the direct manager accounts for the largest variance in team engagement and performance.",
           "difficulty": "Medium"
         },
         {
           "question": "What did Buckingham's ADP Research Institute find about employee engagement surveys?",
-          "choices": ["Pulse surveys are most accurate", "Team-level data matters more than company-level", "Anonymous surveys produce best results", "Engagement is best measured annually"],
+          "choices": [
+            "Team-level data matters more than company-level",
+            "Pulse surveys are most accurate",
+            "Anonymous surveys produce best results",
+            "Engagement is best measured annually"
+          ],
           "answer": "Team-level data matters more than company-level",
-          "explanation": "Buckingham's research shows engagement is a team-level phenomenon — company averages mask the enormous variance between teams.",
+          "explanation": "Buckingham's research shows engagement is a team-level phenomenon \u2014 company averages mask the enormous variance between teams.",
           "difficulty": "Hard"
         },
         {
           "question": "According to Buckingham, how often should managers check in with each direct report?",
-          "choices": ["Annually during review season", "Monthly in structured 1:1s", "Weekly with brief, focused check-ins", "Only when problems arise"],
+          "choices": [
+            "Annually during review season",
+            "Weekly with brief, focused check-ins",
+            "Monthly in structured 1:1s",
+            "Only when problems arise"
+          ],
           "answer": "Weekly with brief, focused check-ins",
-          "explanation": "Buckingham's research shows weekly check-ins — even just 15 minutes — have the highest correlation with team engagement and performance.",
+          "explanation": "Buckingham's research shows weekly check-ins \u2014 even just 15 minutes \u2014 have the highest correlation with team engagement and performance.",
           "difficulty": "Medium"
         }
       ]
@@ -352,35 +552,60 @@
       "questions": [
         {
           "question": "What does Jennifer Moss identify as the root cause of employee burnout?",
-          "choices": ["Too many hours worked", "Organizational and systemic failures, not individual weakness", "Lack of resilience training", "Poor work-life balance choices"],
+          "choices": [
+            "Organizational and systemic failures, not individual weakness",
+            "Too many hours worked",
+            "Lack of resilience training",
+            "Poor work-life balance choices"
+          ],
           "answer": "Organizational and systemic failures, not individual weakness",
-          "explanation": "Moss argues burnout is a management problem — caused by workload, lack of control, fairness issues — not a personal failing to be fixed with yoga.",
+          "explanation": "Moss argues burnout is a management problem \u2014 caused by workload, lack of control, fairness issues \u2014 not a personal failing to be fixed with yoga.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Moss's research, what is the fastest-growing workforce mental health crisis?",
-          "choices": ["Anxiety disorders", "Workplace loneliness", "Depression", "Addiction"],
+          "choices": [
+            "Anxiety disorders",
+            "Addiction",
+            "Depression",
+            "Workplace loneliness"
+          ],
           "answer": "Workplace loneliness",
-          "explanation": "Moss's research identifies workplace loneliness as an epidemic with serious health consequences — comparable to smoking 15 cigarettes a day.",
+          "explanation": "Moss's research identifies workplace loneliness as an epidemic with serious health consequences \u2014 comparable to smoking 15 cigarettes a day.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Moss say is the biggest mistake companies make with employee wellness programs?",
-          "choices": ["Spending too much on them", "Making participation mandatory", "Treating symptoms without fixing root causes", "Not measuring ROI"],
+          "choices": [
+            "Spending too much on them",
+            "Treating symptoms without fixing root causes",
+            "Making participation mandatory",
+            "Not measuring ROI"
+          ],
           "answer": "Treating symptoms without fixing root causes",
           "explanation": "Moss argues wellness apps and meditation classes address symptoms while leaving the underlying organizational stressors intact.",
           "difficulty": "Medium"
         },
         {
           "question": "Which specific management behavior does Moss identify as the strongest predictor of burnout prevention?",
-          "choices": ["Giving bonuses for performance", "Manager recognition and genuine appreciation", "Offering remote work options", "Providing clear career paths"],
+          "choices": [
+            "Giving bonuses for performance",
+            "Offering remote work options",
+            "Manager recognition and genuine appreciation",
+            "Providing clear career paths"
+          ],
           "answer": "Manager recognition and genuine appreciation",
           "explanation": "Moss's research shows that feeling valued by one's manager is a stronger burnout buffer than flexible hours or wellness perks.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Moss argue remote and hybrid work has MOST impacted?",
-          "choices": ["Productivity levels", "Compensation equity", "Social connection and belonging at work", "Access to career advancement"],
+          "choices": [
+            "Social connection and belonging at work",
+            "Compensation equity",
+            "Productivity levels",
+            "Access to career advancement"
+          ],
           "answer": "Social connection and belonging at work",
           "explanation": "Moss says the move to remote and hybrid has severed many informal connection points, accelerating the loneliness crisis she tracks.",
           "difficulty": "Medium"
@@ -395,37 +620,62 @@
       "questions": [
         {
           "question": "What social media platform did Hannah Williams use to build her pay transparency movement?",
-          "choices": ["LinkedIn", "Twitter", "TikTok", "Instagram"],
+          "choices": [
+            "LinkedIn",
+            "TikTok",
+            "Twitter",
+            "Instagram"
+          ],
           "answer": "TikTok",
           "explanation": "Williams built a massive following on TikTok sharing salary data and pay transparency advocacy, leading to her Salary Transparent Street series.",
           "difficulty": "Easy"
         },
         {
           "question": "What is the core argument Williams makes for pay transparency?",
-          "choices": ["It increases company costs", "It eliminates salary negotiation gaps driven by gender and race", "It makes HR jobs easier", "It reduces employee turnover automatically"],
+          "choices": [
+            "It eliminates salary negotiation gaps driven by gender and race",
+            "It increases company costs",
+            "It makes HR jobs easier",
+            "It reduces employee turnover automatically"
+          ],
           "answer": "It eliminates salary negotiation gaps driven by gender and race",
-          "explanation": "Williams argues that pay secrecy allows negotiation disparities to compound over time — transparency removes the information asymmetry.",
+          "explanation": "Williams argues that pay secrecy allows negotiation disparities to compound over time \u2014 transparency removes the information asymmetry.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Williams say happens to employee trust when companies resist pay transparency?",
-          "choices": ["It stays neutral", "It increases due to perceived fairness", "It erodes — employees assume the worst", "It only affects new hires"],
-          "answer": "It erodes — employees assume the worst",
-          "explanation": "Williams argues that secrecy breeds suspicion. When employees can't verify fairness, they assume unfairness — and disengage or leave.",
+          "choices": [
+            "It stays neutral",
+            "It increases due to perceived fairness",
+            "It only affects new hires",
+            "It erodes \u2014 employees assume the worst"
+          ],
+          "answer": "It erodes \u2014 employees assume the worst",
+          "explanation": "Williams argues that secrecy breeds suspicion. When employees can't verify fairness, they assume unfairness \u2014 and disengage or leave.",
           "difficulty": "Medium"
         },
         {
           "question": "Which US states led early legislative action requiring salary ranges in job postings?",
-          "choices": ["Texas and Florida", "New York and California", "Illinois and Ohio", "Washington and Georgia"],
+          "choices": [
+            "Texas and Florida",
+            "Illinois and Ohio",
+            "New York and California",
+            "Washington and Georgia"
+          ],
           "answer": "New York and California",
           "explanation": "New York City and California were among the first jurisdictions to mandate salary range disclosure in job postings, a trend Williams championed.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Williams recommend employees do BEFORE accepting a job offer?",
-          "choices": ["Research the company's Glassdoor reviews", "Research market salary data for their role and location", "Ask the recruiter what the budget is", "Wait for the employer to make the first offer"],
+          "choices": [
+            "Research the company's Glassdoor reviews",
+            "Research market salary data for their role and location",
+            "Ask the recruiter what the budget is",
+            "Wait for the employer to make the first offer"
+          ],
           "answer": "Research market salary data for their role and location",
-          "explanation": "Williams advises candidates to come to negotiations armed with data — not just gut feel — about what their skills and role are worth.",
+          "explanation": "Williams advises candidates to come to negotiations armed with data \u2014 not just gut feel \u2014 about what their skills and role are worth.",
           "difficulty": "Easy"
         }
       ]
@@ -438,35 +688,60 @@
       "questions": [
         {
           "question": "What are the three 'reciprocity styles' Adam Grant identifies in his research?",
-          "choices": ["Leaders, followers, and neutrals", "Givers, takers, and matchers", "Helpers, competitors, and collaborators", "Innovators, operators, and maintainers"],
+          "choices": [
+            "Leaders, followers, and neutrals",
+            "Helpers, competitors, and collaborators",
+            "Givers, takers, and matchers",
+            "Innovators, operators, and maintainers"
+          ],
           "answer": "Givers, takers, and matchers",
           "explanation": "Grant's research classifies people by how they approach exchanges: givers contribute without expectation, takers take more than they give, matchers balance the two.",
           "difficulty": "Easy"
         },
         {
           "question": "What surprising finding did Grant's research reveal about givers in the workplace?",
-          "choices": ["Givers always finish last", "Givers are both the worst and best performers", "Givers outperform takers in every domain", "Givers burn out at the same rate as takers"],
+          "choices": [
+            "Givers always finish last",
+            "Givers are both the worst and best performers",
+            "Givers outperform takers in every domain",
+            "Givers burn out at the same rate as takers"
+          ],
           "answer": "Givers are both the worst and best performers",
-          "explanation": "Grant found givers occupy both the bottom and top of performance rankings — selfless givers burn out, while otherish givers who set limits thrive.",
+          "explanation": "Grant found givers occupy both the bottom and top of performance rankings \u2014 selfless givers burn out, while otherish givers who set limits thrive.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Grant identify as the key to productive disagreement in teams?",
-          "choices": ["Having a designated devil's advocate", "Separating idea criticism from personal criticism", "Avoiding conflict entirely", "Using anonymous voting systems"],
+          "choices": [
+            "Separating idea criticism from personal criticism",
+            "Having a designated devil's advocate",
+            "Avoiding conflict entirely",
+            "Using anonymous voting systems"
+          ],
           "answer": "Separating idea criticism from personal criticism",
           "explanation": "Grant's research shows teams that can challenge ideas without it feeling like a personal attack generate better outcomes and more innovation.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Grant, what is 'psychological safety' most commonly confused with?",
-          "choices": ["Trust", "Accountability", "Comfort and harmony", "Transparency"],
+          "choices": [
+            "Trust",
+            "Accountability",
+            "Transparency",
+            "Comfort and harmony"
+          ],
           "answer": "Comfort and harmony",
-          "explanation": "Grant emphasizes that psychological safety is not about being nice — it's about creating conditions where people feel safe to take risks and disagree.",
+          "explanation": "Grant emphasizes that psychological safety is not about being nice \u2014 it's about creating conditions where people feel safe to take risks and disagree.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Grant's research show is the most effective way to change someone's mind?",
-          "choices": ["Presenting more data and evidence", "Asking questions that prompt their own reflection", "Finding common ground first", "Using authority and expertise"],
+          "choices": [
+            "Presenting more data and evidence",
+            "Finding common ground first",
+            "Asking questions that prompt their own reflection",
+            "Using authority and expertise"
+          ],
           "answer": "Asking questions that prompt their own reflection",
           "explanation": "Grant cites motivational interviewing research showing that asking 'how did you reach that view?' is more persuasive than presenting counter-evidence.",
           "difficulty": "Hard"
@@ -481,35 +756,60 @@
       "questions": [
         {
           "question": "What does Jim Link identify as AI's most immediate practical value for HR teams?",
-          "choices": ["Replacing HR Business Partners", "Automating administrative and compliance tasks", "Running performance reviews automatically", "Predicting which employees will leave"],
+          "choices": [
+            "Replacing HR Business Partners",
+            "Predicting which employees will leave",
+            "Running performance reviews automatically",
+            "Automating administrative and compliance tasks"
+          ],
           "answer": "Automating administrative and compliance tasks",
-          "explanation": "Link argues AI's clearest near-term value is freeing HR from time-consuming admin work — so professionals can focus on higher-value human work.",
+          "explanation": "Link argues AI's clearest near-term value is freeing HR from time-consuming admin work \u2014 so professionals can focus on higher-value human work.",
           "difficulty": "Easy"
         },
         {
           "question": "What risk does Link say HR must actively govern when deploying AI in talent decisions?",
-          "choices": ["Cost overruns", "Bias and disparate impact on protected groups", "Vendor lock-in", "Loss of HR headcount"],
+          "choices": [
+            "Cost overruns",
+            "Vendor lock-in",
+            "Bias and disparate impact on protected groups",
+            "Loss of HR headcount"
+          ],
           "answer": "Bias and disparate impact on protected groups",
-          "explanation": "Link emphasizes that AI trained on historical data can encode and amplify existing biases — HR must audit tools before and after deployment.",
+          "explanation": "Link emphasizes that AI trained on historical data can encode and amplify existing biases \u2014 HR must audit tools before and after deployment.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Link, what HR skill becomes MORE valuable as AI becomes more prevalent?",
-          "choices": ["Data entry accuracy", "Process documentation", "Human judgment and empathy", "Software configuration"],
+          "choices": [
+            "Data entry accuracy",
+            "Human judgment and empathy",
+            "Process documentation",
+            "Software configuration"
+          ],
           "answer": "Human judgment and empathy",
-          "explanation": "Link argues that as AI handles routine tasks, the uniquely human skills — empathy, contextual judgment, ethical reasoning — become more critical.",
+          "explanation": "Link argues that as AI handles routine tasks, the uniquely human skills \u2014 empathy, contextual judgment, ethical reasoning \u2014 become more critical.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Link recommend HR professionals do to prepare for AI disruption?",
-          "choices": ["Learn to code", "Resist AI adoption to protect HR roles", "Build AI literacy and understand what tools can and can't do", "Wait for industry standards before acting"],
+          "choices": [
+            "Build AI literacy and understand what tools can and can't do",
+            "Resist AI adoption to protect HR roles",
+            "Learn to code",
+            "Wait for industry standards before acting"
+          ],
           "answer": "Build AI literacy and understand what tools can and can't do",
-          "explanation": "Link advocates for HR professionals becoming knowledgeable users of AI — not engineers — so they can ask the right questions and spot risks.",
+          "explanation": "Link advocates for HR professionals becoming knowledgeable users of AI \u2014 not engineers \u2014 so they can ask the right questions and spot risks.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Link say AI cannot replace in the HR function, regardless of capability?",
-          "choices": ["Scheduling and coordination", "The human relationship at the heart of the employee experience", "Benefits administration", "Job description writing"],
+          "choices": [
+            "Scheduling and coordination",
+            "Job description writing",
+            "Benefits administration",
+            "The human relationship at the heart of the employee experience"
+          ],
           "answer": "The human relationship at the heart of the employee experience",
           "explanation": "Link is clear: AI can augment HR, but the trusted human relationship between an HR professional and an employee is irreplaceable.",
           "difficulty": "Hard"
@@ -524,37 +824,62 @@
       "questions": [
         {
           "question": "What fundamental shift in hiring does Dan Shapero say LinkedIn's data reveals?",
-          "choices": ["Companies are hiring faster than ever", "The move from credentials to demonstrated skills", "Remote work is decreasing hiring pools", "Job seekers now have less leverage"],
+          "choices": [
+            "The move from credentials to demonstrated skills",
+            "Companies are hiring faster than ever",
+            "Remote work is decreasing hiring pools",
+            "Job seekers now have less leverage"
+          ],
           "answer": "The move from credentials to demonstrated skills",
           "explanation": "Shapero cites LinkedIn data showing a significant drop in degree requirements as companies shift to evaluating actual skills and capabilities.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Shapero, what is the #1 thing candidates want from the hiring experience?",
-          "choices": ["Faster interviews", "Higher compensation transparency", "Clear communication and timely feedback", "More remote interview options"],
+          "choices": [
+            "Faster interviews",
+            "Clear communication and timely feedback",
+            "Higher compensation transparency",
+            "More remote interview options"
+          ],
           "answer": "Clear communication and timely feedback",
-          "explanation": "Shapero's data shows that ghosting and slow communication are the top candidates complaints — and directly impact offer acceptance rates.",
+          "explanation": "Shapero's data shows that ghosting and slow communication are the top candidates complaints \u2014 and directly impact offer acceptance rates.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Shapero identify as the biggest gap between how companies recruit and what top talent actually wants?",
-          "choices": ["Benefits packages", "Salary ranges", "Knowing the team and manager before accepting", "Flexible start dates"],
+          "choices": [
+            "Benefits packages",
+            "Salary ranges",
+            "Flexible start dates",
+            "Knowing the team and manager before accepting"
+          ],
           "answer": "Knowing the team and manager before accepting",
-          "explanation": "Shapero says top candidates make decisions based on who they'll work for and with — but most hiring processes don't give them this visibility.",
+          "explanation": "Shapero says top candidates make decisions based on who they'll work for and with \u2014 but most hiring processes don't give them this visibility.",
           "difficulty": "Hard"
         },
         {
           "question": "What employer branding element does LinkedIn data show has the biggest influence on application rates?",
-          "choices": ["Company size and valuation", "Life at the company content from real employees", "CEO reputation", "Number of benefits listed"],
+          "choices": [
+            "Company size and valuation",
+            "CEO reputation",
+            "Life at the company content from real employees",
+            "Number of benefits listed"
+          ],
           "answer": "Life at the company content from real employees",
           "explanation": "Shapero cites data showing authentic employee-generated content drives significantly more applications than polished corporate marketing.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Shapero say is the biggest recruiter mistake in the current talent market?",
-          "choices": ["Posting too many jobs at once", "Waiting for candidates to apply instead of proactively sourcing", "Using too many screening rounds", "Relying on employee referrals only"],
+          "choices": [
+            "Posting too many jobs at once",
+            "Waiting for candidates to apply instead of proactively sourcing",
+            "Using too many screening rounds",
+            "Relying on employee referrals only"
+          ],
           "answer": "Waiting for candidates to apply instead of proactively sourcing",
-          "explanation": "Shapero argues the best candidates are often passive — not actively applying — which means inbound-only recruiting misses the strongest talent.",
+          "explanation": "Shapero argues the best candidates are often passive \u2014 not actively applying \u2014 which means inbound-only recruiting misses the strongest talent.",
           "difficulty": "Hard"
         }
       ]
@@ -567,37 +892,62 @@
       "questions": [
         {
           "question": "What does Kyle Holm identify as the most undervalued retention driver for hourly workers?",
-          "choices": ["Higher base pay", "Predictable and flexible scheduling", "Health insurance coverage", "Free meals and perks"],
+          "choices": [
+            "Higher base pay",
+            "Predictable and flexible scheduling",
+            "Health insurance coverage",
+            "Free meals and perks"
+          ],
           "answer": "Predictable and flexible scheduling",
-          "explanation": "Holm's research shows that schedule unpredictability is a massive source of stress for hourly workers — more than many employers realize.",
+          "explanation": "Holm's research shows that schedule unpredictability is a massive source of stress for hourly workers \u2014 more than many employers realize.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Holm, when does the retention battle for a new employee ACTUALLY begin?",
-          "choices": ["At the 90-day review", "The moment they accept the offer", "During week one onboarding", "At their first performance review"],
+          "choices": [
+            "At the 90-day review",
+            "During week one onboarding",
+            "The moment they accept the offer",
+            "At their first performance review"
+          ],
           "answer": "The moment they accept the offer",
-          "explanation": "Holm argues companies lose new hires during the gap between offer acceptance and start date — engagement must begin immediately.",
+          "explanation": "Holm argues companies lose new hires during the gap between offer acceptance and start date \u2014 engagement must begin immediately.",
           "difficulty": "Hard"
         },
         {
           "question": "What total rewards element does Holm say is most overlooked in compensation strategy?",
-          "choices": ["Equity and stock options", "Non-monetary recognition and appreciation", "Pension and retirement benefits", "Annual merit increases"],
+          "choices": [
+            "Non-monetary recognition and appreciation",
+            "Equity and stock options",
+            "Pension and retirement benefits",
+            "Annual merit increases"
+          ],
           "answer": "Non-monetary recognition and appreciation",
           "explanation": "Holm finds companies focus heavily on pay benchmarking while underinvesting in the recognition programs that actually drive day-to-day engagement.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Holm recommend companies do with pay transparency to improve retention?",
-          "choices": ["Keep salaries secret to prevent comparison", "Share pay ranges and explain how pay decisions are made", "Only share ranges during negotiations", "Let managers decide what to disclose"],
+          "choices": [
+            "Keep salaries secret to prevent comparison",
+            "Let managers decide what to disclose",
+            "Only share ranges during negotiations",
+            "Share pay ranges and explain how pay decisions are made"
+          ],
           "answer": "Share pay ranges and explain how pay decisions are made",
-          "explanation": "Holm argues transparency builds trust — not just sharing numbers, but explaining the framework so employees understand how to grow their pay.",
+          "explanation": "Holm argues transparency builds trust \u2014 not just sharing numbers, but explaining the framework so employees understand how to grow their pay.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Holm identify as the clearest signal that a retention problem is coming?",
-          "choices": ["Declining productivity metrics", "Employees stopping discretionary effort", "Increased sick day usage", "Negative Glassdoor reviews"],
+          "choices": [
+            "Declining productivity metrics",
+            "Increased sick day usage",
+            "Employees stopping discretionary effort",
+            "Negative Glassdoor reviews"
+          ],
           "answer": "Employees stopping discretionary effort",
-          "explanation": "Holm says when employees stop going above and beyond — doing just enough to get by — it signals disengagement before they formally resign.",
+          "explanation": "Holm says when employees stop going above and beyond \u2014 doing just enough to get by \u2014 it signals disengagement before they formally resign.",
           "difficulty": "Hard"
         }
       ]
@@ -610,37 +960,62 @@
       "questions": [
         {
           "question": "What is the central argument in Rich Safeer's book about workplace wellbeing?",
-          "choices": ["Wellness is an individual choice", "Health is a team sport — culture drives wellbeing more than individual programs", "Companies should outsource wellness to apps", "Mental health benefits are the key lever"],
-          "answer": "Health is a team sport — culture drives wellbeing more than individual programs",
+          "choices": [
+            "Wellness is an individual choice",
+            "Companies should outsource wellness to apps",
+            "Health is a team sport \u2014 culture drives wellbeing more than individual programs",
+            "Mental health benefits are the key lever"
+          ],
+          "answer": "Health is a team sport \u2014 culture drives wellbeing more than individual programs",
           "explanation": "Safeer argues that team norms and manager behavior shape wellbeing outcomes far more than individual EAPs or wellness challenges.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Safeer identify as the most powerful thing a manager can do for team wellbeing?",
-          "choices": ["Offer flexible work hours", "Model healthy behaviors themselves", "Provide access to mental health apps", "Reduce meeting load"],
+          "choices": [
+            "Offer flexible work hours",
+            "Reduce meeting load",
+            "Provide access to mental health apps",
+            "Model healthy behaviors themselves"
+          ],
           "answer": "Model healthy behaviors themselves",
-          "explanation": "Safeer's research shows that manager behavior creates permission structures — if the manager takes breaks, team members feel they can too.",
+          "explanation": "Safeer's research shows that manager behavior creates permission structures \u2014 if the manager takes breaks, team members feel they can too.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Safeer say about EAP (Employee Assistance Programs) utilization?",
-          "choices": ["They are highly effective with average 70% utilization", "Most programs are severely underused — often under 5% utilization", "They work best for remote employees", "They should be replaced with fitness benefits"],
-          "answer": "Most programs are severely underused — often under 5% utilization",
+          "choices": [
+            "They are highly effective with average 70% utilization",
+            "Most programs are severely underused \u2014 often under 5% utilization",
+            "They work best for remote employees",
+            "They should be replaced with fitness benefits"
+          ],
+          "answer": "Most programs are severely underused \u2014 often under 5% utilization",
           "explanation": "Safeer cites consistently low EAP utilization as evidence that awareness and access alone don't drive help-seeking behavior.",
           "difficulty": "Hard"
         },
         {
           "question": "According to Safeer, what is the biggest barrier to employees using mental health benefits?",
-          "choices": ["Cost of copays", "Stigma and fear of career consequences", "Lack of available providers", "Complexity of the insurance process"],
+          "choices": [
+            "Stigma and fear of career consequences",
+            "Cost of copays",
+            "Lack of available providers",
+            "Complexity of the insurance process"
+          ],
           "answer": "Stigma and fear of career consequences",
           "explanation": "Safeer's research shows employees avoid mental health support primarily because they fear being seen as weak or at risk of losing their jobs.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Safeer recommend as the first step for companies building a wellbeing culture?",
-          "choices": ["Launch a wellness challenge", "Survey employees on their wellbeing needs", "Train managers to recognize distress signals", "Hire a Chief Wellness Officer"],
+          "choices": [
+            "Launch a wellness challenge",
+            "Survey employees on their wellbeing needs",
+            "Hire a Chief Wellness Officer",
+            "Train managers to recognize distress signals"
+          ],
           "answer": "Train managers to recognize distress signals",
-          "explanation": "Safeer argues that managers are the front line of mental health — training them to notice and respond to warning signs is the highest-leverage starting point.",
+          "explanation": "Safeer argues that managers are the front line of mental health \u2014 training them to notice and respond to warning signs is the highest-leverage starting point.",
           "difficulty": "Easy"
         }
       ]
@@ -653,37 +1028,62 @@
       "questions": [
         {
           "question": "What does Jathan Janove call the core problem with most annual performance review systems?",
-          "choices": ["They take too long", "They measure the wrong things", "They create a paper trail instead of development", "They are too expensive to run"],
+          "choices": [
+            "They take too long",
+            "They measure the wrong things",
+            "They are too expensive to run",
+            "They create a paper trail instead of development"
+          ],
           "answer": "They create a paper trail instead of development",
           "explanation": "Janove argues most performance systems are designed to protect companies legally rather than actually develop employees and improve performance.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Janove say makes performance documentation legally defensible AND developmentally useful?",
-          "choices": ["Volume of documentation", "Specificity — observable behaviors, dates, and business impact", "Manager seniority signing off", "HR system timestamps"],
-          "answer": "Specificity — observable behaviors, dates, and business impact",
-          "explanation": "Janove argues vague feedback fails both the legal test and the development test — specificity is what makes documentation actually useful.",
+          "choices": [
+            "Specificity \u2014 observable behaviors, dates, and business impact",
+            "Volume of documentation",
+            "Manager seniority signing off",
+            "HR system timestamps"
+          ],
+          "answer": "Specificity \u2014 observable behaviors, dates, and business impact",
+          "explanation": "Janove argues vague feedback fails both the legal test and the development test \u2014 specificity is what makes documentation actually useful.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Janove, what is the most common reason PIPs fail to improve performance?",
-          "choices": ["They are too short", "They are used as termination paperwork rather than genuine development plans", "Employees disagree with the feedback", "HR is not involved enough"],
+          "choices": [
+            "They are too short",
+            "Employees disagree with the feedback",
+            "They are used as termination paperwork rather than genuine development plans",
+            "HR is not involved enough"
+          ],
           "answer": "They are used as termination paperwork rather than genuine development plans",
-          "explanation": "Janove says PIPs are often presented so late and so defensively that the employee sees them as a firing notice — not a real opportunity.",
+          "explanation": "Janove says PIPs are often presented so late and so defensively that the employee sees them as a firing notice \u2014 not a real opportunity.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Janove recommend replacing annual reviews with for better outcomes?",
-          "choices": ["Quarterly reviews only", "Continuous, coaching-based conversations tied to specific work", "360-degree peer reviews", "Self-assessments submitted to HR"],
+          "choices": [
+            "Quarterly reviews only",
+            "Continuous, coaching-based conversations tied to specific work",
+            "360-degree peer reviews",
+            "Self-assessments submitted to HR"
+          ],
           "answer": "Continuous, coaching-based conversations tied to specific work",
           "explanation": "Janove advocates for real-time, specific feedback conversations rather than once-a-year summaries of months-old observations.",
           "difficulty": "Medium"
         },
         {
           "question": "What legal principle does Janove say HR teams frequently violate in discipline cases?",
-          "choices": ["Equal pay rules", "Consistency — applying standards unevenly across similar situations", "FMLA documentation requirements", "At-will employment protections"],
-          "answer": "Consistency — applying standards unevenly across similar situations",
-          "explanation": "Janove cites inconsistency as the #1 litigation risk — if one employee was disciplined differently for the same behavior, it creates legal exposure.",
+          "choices": [
+            "Consistency \u2014 applying standards unevenly across similar situations",
+            "Equal pay rules",
+            "FMLA documentation requirements",
+            "At-will employment protections"
+          ],
+          "answer": "Consistency \u2014 applying standards unevenly across similar situations",
+          "explanation": "Janove cites inconsistency as the #1 litigation risk \u2014 if one employee was disciplined differently for the same behavior, it creates legal exposure.",
           "difficulty": "Hard"
         }
       ]
@@ -696,35 +1096,60 @@
       "questions": [
         {
           "question": "What does Gad Levanon's research say GenAI will MOST impact in the near term?",
-          "choices": ["Physical and manual labor jobs", "White-collar knowledge work tasks — especially writing and analysis", "Healthcare clinical roles", "Transportation and logistics"],
-          "answer": "White-collar knowledge work tasks — especially writing and analysis",
-          "explanation": "Levanon's research finds GenAI disproportionately affects knowledge workers — particularly those in writing, research, coding, and analytical roles.",
+          "choices": [
+            "White-collar knowledge work tasks \u2014 especially writing and analysis",
+            "Physical and manual labor jobs",
+            "Healthcare clinical roles",
+            "Transportation and logistics"
+          ],
+          "answer": "White-collar knowledge work tasks \u2014 especially writing and analysis",
+          "explanation": "Levanon's research finds GenAI disproportionately affects knowledge workers \u2014 particularly those in writing, research, coding, and analytical roles.",
           "difficulty": "Easy"
         },
         {
           "question": "What does Levanon say will happen to TOTAL employment as AI automates tasks?",
-          "choices": ["Massive net job losses across all sectors", "Employment will remain relatively stable as new roles emerge", "Only low-skill jobs will disappear", "Unemployment will spike within 5 years"],
+          "choices": [
+            "Massive net job losses across all sectors",
+            "Only low-skill jobs will disappear",
+            "Employment will remain relatively stable as new roles emerge",
+            "Unemployment will spike within 5 years"
+          ],
           "answer": "Employment will remain relatively stable as new roles emerge",
-          "explanation": "Levanon takes a measured view — while tasks are automated, historical patterns suggest new job categories emerge, preserving overall employment levels.",
+          "explanation": "Levanon takes a measured view \u2014 while tasks are automated, historical patterns suggest new job categories emerge, preserving overall employment levels.",
           "difficulty": "Hard"
         },
         {
           "question": "What skill does Levanon identify as MOST valuable for workers navigating AI disruption?",
-          "choices": ["Programming and software engineering", "The ability to learn and adapt to new tools quickly", "Deep domain expertise in a single field", "Emotional intelligence and soft skills only"],
+          "choices": [
+            "Programming and software engineering",
+            "Emotional intelligence and soft skills only",
+            "Deep domain expertise in a single field",
+            "The ability to learn and adapt to new tools quickly"
+          ],
           "answer": "The ability to learn and adapt to new tools quickly",
-          "explanation": "Levanon argues adaptability and learning agility are the top protective skills — workers who can quickly adopt new AI tools will outperform those who resist.",
+          "explanation": "Levanon argues adaptability and learning agility are the top protective skills \u2014 workers who can quickly adopt new AI tools will outperform those who resist.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Levanon's labor market data show about the wage effects of AI automation?",
-          "choices": ["AI is driving wages down across all sectors", "AI-augmented workers command higher wages than non-augmented peers", "Wages are unaffected by AI adoption", "AI is increasing wages only in tech sectors"],
+          "choices": [
+            "AI is driving wages down across all sectors",
+            "AI-augmented workers command higher wages than non-augmented peers",
+            "Wages are unaffected by AI adoption",
+            "AI is increasing wages only in tech sectors"
+          ],
           "answer": "AI-augmented workers command higher wages than non-augmented peers",
-          "explanation": "Levanon's research shows workers who effectively use AI tools become significantly more productive — and employers pay a premium for that capability.",
+          "explanation": "Levanon's research shows workers who effectively use AI tools become significantly more productive \u2014 and employers pay a premium for that capability.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Levanon say HR teams should prioritize in workforce planning given AI trends?",
-          "choices": ["Hiring freezes until AI stabilizes", "Investing in reskilling and upskilling current employees", "Outsourcing all knowledge work to AI vendors", "Reducing workforce size proactively"],
+          "choices": [
+            "Hiring freezes until AI stabilizes",
+            "Reducing workforce size proactively",
+            "Outsourcing all knowledge work to AI vendors",
+            "Investing in reskilling and upskilling current employees"
+          ],
           "answer": "Investing in reskilling and upskilling current employees",
           "explanation": "Levanon argues the most forward-looking companies are investing heavily in developing their existing workforce to work alongside AI tools.",
           "difficulty": "Medium"
@@ -739,37 +1164,62 @@
       "questions": [
         {
           "question": "What does Brian Reaves argue is the most powerful driver of DEI outcomes inside organizations?",
-          "choices": ["Diversity training programs", "Inclusive leadership behavior at every level", "Diverse hiring targets and quotas", "DEI team headcount and budget"],
+          "choices": [
+            "Diversity training programs",
+            "Inclusive leadership behavior at every level",
+            "Diverse hiring targets and quotas",
+            "DEI team headcount and budget"
+          ],
           "answer": "Inclusive leadership behavior at every level",
-          "explanation": "Reaves consistently argues that DEI succeeds or fails at the manager level — executive commitment matters, but daily inclusive behavior drives actual outcomes.",
+          "explanation": "Reaves consistently argues that DEI succeeds or fails at the manager level \u2014 executive commitment matters, but daily inclusive behavior drives actual outcomes.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Reaves say Employee Resource Groups (ERGs) deliver beyond community for members?",
-          "choices": ["Cost savings for HR teams", "Business intelligence and innovation that companies often underuse", "Replacement for formal DEI programs", "Legal compliance documentation"],
+          "choices": [
+            "Cost savings for HR teams",
+            "Legal compliance documentation",
+            "Replacement for formal DEI programs",
+            "Business intelligence and innovation that companies often underuse"
+          ],
           "answer": "Business intelligence and innovation that companies often underuse",
-          "explanation": "Reaves argues ERGs are rich sources of market insights, product feedback, and innovation — but most companies treat them as social clubs rather than business assets.",
+          "explanation": "Reaves argues ERGs are rich sources of market insights, product feedback, and innovation \u2014 but most companies treat them as social clubs rather than business assets.",
           "difficulty": "Hard"
         },
         {
           "question": "According to Reaves, what is the most common reason DEI initiatives fail to move the needle?",
-          "choices": ["Lack of budget", "Treating DEI as a program rather than a business strategy", "Employee resistance", "Poor diversity recruiting"],
+          "choices": [
+            "Lack of budget",
+            "Employee resistance",
+            "Treating DEI as a program rather than a business strategy",
+            "Poor diversity recruiting"
+          ],
           "answer": "Treating DEI as a program rather than a business strategy",
           "explanation": "Reaves argues that DEI is often siloed as an HR initiative rather than integrated into how the business makes decisions, hires, and serves customers.",
           "difficulty": "Medium"
         },
         {
           "question": "What metric does Reaves say companies must track to show DEI is working?",
-          "choices": ["Representation at entry level", "Retention and advancement rates by demographic group", "Number of DEI training hours completed", "Employee satisfaction survey scores"],
+          "choices": [
+            "Retention and advancement rates by demographic group",
+            "Representation at entry level",
+            "Number of DEI training hours completed",
+            "Employee satisfaction survey scores"
+          ],
           "answer": "Retention and advancement rates by demographic group",
-          "explanation": "Reaves argues representation at hire means nothing if underrepresented groups leave faster or advance slower — retention and promotion data reveals true inclusion.",
+          "explanation": "Reaves argues representation at hire means nothing if underrepresented groups leave faster or advance slower \u2014 retention and promotion data reveals true inclusion.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Reaves identify as the #1 thing allies can do to advance inclusion at work?",
-          "choices": ["Attend DEI training voluntarily", "Speak up when they witness exclusionary behavior", "Mentor diverse junior employees", "Share DEI content on LinkedIn"],
+          "choices": [
+            "Attend DEI training voluntarily",
+            "Mentor diverse junior employees",
+            "Speak up when they witness exclusionary behavior",
+            "Share DEI content on LinkedIn"
+          ],
           "answer": "Speak up when they witness exclusionary behavior",
-          "explanation": "Reaves emphasizes active allyship — not passive support. Speaking up in the moment when bias or exclusion occurs is what actually shifts culture.",
+          "explanation": "Reaves emphasizes active allyship \u2014 not passive support. Speaking up in the moment when bias or exclusion occurs is what actually shifts culture.",
           "difficulty": "Easy"
         }
       ]
@@ -782,37 +1232,62 @@
       "questions": [
         {
           "question": "What does Myrna Maysonet identify as the most common mistake managers make when conflict arises?",
-          "choices": ["Escalating to HR too quickly", "Avoiding the conflict and hoping it resolves itself", "Documenting before having a conversation", "Involving too many stakeholders"],
+          "choices": [
+            "Escalating to HR too quickly",
+            "Documenting before having a conversation",
+            "Avoiding the conflict and hoping it resolves itself",
+            "Involving too many stakeholders"
+          ],
           "answer": "Avoiding the conflict and hoping it resolves itself",
-          "explanation": "Maysonet finds that conflict avoidance is the norm among managers — and that delay consistently makes situations worse and harder to resolve.",
+          "explanation": "Maysonet finds that conflict avoidance is the norm among managers \u2014 and that delay consistently makes situations worse and harder to resolve.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Maysonet, what is the HR professional's primary role in employee conflict situations?",
-          "choices": ["To side with the company's legal interest", "To be a neutral fact-finder and guide resolution", "To discipline the party at fault", "To document and escalate to legal"],
+          "choices": [
+            "To be a neutral fact-finder and guide resolution",
+            "To side with the company's legal interest",
+            "To discipline the party at fault",
+            "To document and escalate to legal"
+          ],
           "answer": "To be a neutral fact-finder and guide resolution",
-          "explanation": "Maysonet argues HR's value in conflict is neutrality and process — not taking sides, but ensuring a fair process that gets to the truth.",
+          "explanation": "Maysonet argues HR's value in conflict is neutrality and process \u2014 not taking sides, but ensuring a fair process that gets to the truth.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Maysonet say is the biggest change in employee conflict patterns post-pandemic?",
-          "choices": ["Fewer conflicts due to remote separation", "A sharp rise in incivility and respect-related complaints", "More compensation disputes", "Increased legal action from employees"],
+          "choices": [
+            "Fewer conflicts due to remote separation",
+            "A sharp rise in incivility and respect-related complaints",
+            "More compensation disputes",
+            "Increased legal action from employees"
+          ],
           "answer": "A sharp rise in incivility and respect-related complaints",
-          "explanation": "Maysonet notes a dramatic increase in complaints about disrespectful behavior, tone, and communication — accelerated by remote work and political polarization.",
+          "explanation": "Maysonet notes a dramatic increase in complaints about disrespectful behavior, tone, and communication \u2014 accelerated by remote work and political polarization.",
           "difficulty": "Hard"
         },
         {
           "question": "What investigation principle does Maysonet say HR must protect above all else?",
-          "choices": ["Speed of resolution", "Confidentiality and impartiality throughout the process", "Manager satisfaction with the outcome", "Zero legal exposure for the company"],
+          "choices": [
+            "Speed of resolution",
+            "Zero legal exposure for the company",
+            "Manager satisfaction with the outcome",
+            "Confidentiality and impartiality throughout the process"
+          ],
           "answer": "Confidentiality and impartiality throughout the process",
-          "explanation": "Maysonet argues that once confidentiality or fairness is compromised in an investigation, trust in HR — and legal defensibility — collapses.",
+          "explanation": "Maysonet argues that once confidentiality or fairness is compromised in an investigation, trust in HR \u2014 and legal defensibility \u2014 collapses.",
           "difficulty": "Medium"
         },
         {
           "question": "According to Maysonet, what is the best leading indicator that conflict is building on a team?",
-          "choices": ["Formal grievance filings", "Subtle withdrawal — missed meetings, fewer contributions, shorter responses", "Declining productivity metrics", "Increased sick day usage"],
-          "answer": "Subtle withdrawal — missed meetings, fewer contributions, shorter responses",
-          "explanation": "Maysonet trains managers to notice behavioral shifts before conflict becomes explicit — withdrawal is often the earliest visible signal of interpersonal stress.",
+          "choices": [
+            "Formal grievance filings",
+            "Subtle withdrawal \u2014 missed meetings, fewer contributions, shorter responses",
+            "Declining productivity metrics",
+            "Increased sick day usage"
+          ],
+          "answer": "Subtle withdrawal \u2014 missed meetings, fewer contributions, shorter responses",
+          "explanation": "Maysonet trains managers to notice behavioral shifts before conflict becomes explicit \u2014 withdrawal is often the earliest visible signal of interpersonal stress.",
           "difficulty": "Hard"
         }
       ]
@@ -825,37 +1300,62 @@
       "questions": [
         {
           "question": "What does Sejal Thakkar say is the true cost of workplace incivility that most companies miss?",
-          "choices": ["Legal settlement costs", "The cumulative productivity loss from employees managing stress and disengagement", "Higher turnover replacement costs", "Reputational damage from bad reviews"],
+          "choices": [
+            "Legal settlement costs",
+            "Reputational damage from bad reviews",
+            "Higher turnover replacement costs",
+            "The cumulative productivity loss from employees managing stress and disengagement"
+          ],
           "answer": "The cumulative productivity loss from employees managing stress and disengagement",
-          "explanation": "Thakkar cites research showing that targets of incivility spend significant work time ruminating, reducing effort, and avoiding the uncivil person — a massive hidden cost.",
+          "explanation": "Thakkar cites research showing that targets of incivility spend significant work time ruminating, reducing effort, and avoiding the uncivil person \u2014 a massive hidden cost.",
           "difficulty": "Hard"
         },
         {
           "question": "What does Thakkar say leaders most commonly underestimate about their own behavior?",
-          "choices": ["Their workload demands", "The ripple effect of small uncivil acts on team psychological safety", "Their salary relative to peers", "Their influence on company culture"],
+          "choices": [
+            "Their workload demands",
+            "The ripple effect of small uncivil acts on team psychological safety",
+            "Their salary relative to peers",
+            "Their influence on company culture"
+          ],
           "answer": "The ripple effect of small uncivil acts on team psychological safety",
-          "explanation": "Thakkar's training focuses on micro-incivilities — eye rolls, interruptions, dismissive tone — that leaders often dismiss but that significantly erode team trust.",
+          "explanation": "Thakkar's training focuses on micro-incivilities \u2014 eye rolls, interruptions, dismissive tone \u2014 that leaders often dismiss but that significantly erode team trust.",
           "difficulty": "Medium"
         },
         {
           "question": "What is Thakkar's recommended first response when an employee reports feeling disrespected?",
-          "choices": ["Launch a formal investigation immediately", "Acknowledge the impact and thank them for speaking up", "Explain company policy on harassment", "Ask them to document the incidents in writing"],
+          "choices": [
+            "Acknowledge the impact and thank them for speaking up",
+            "Launch a formal investigation immediately",
+            "Explain company policy on harassment",
+            "Ask them to document the incidents in writing"
+          ],
           "answer": "Acknowledge the impact and thank them for speaking up",
-          "explanation": "Thakkar says the single most damaging thing HR and managers do is make the reporter feel dismissed — acknowledgment first signals that speaking up was right.",
+          "explanation": "Thakkar says the single most damaging thing HR and managers do is make the reporter feel dismissed \u2014 acknowledgment first signals that speaking up was right.",
           "difficulty": "Easy"
         },
         {
           "question": "According to Thakkar, what creates the conditions for workplace incivility to become chronic?",
-          "choices": ["High stress industries inherently produce incivility", "Leadership silence — uncivil behavior tolerated at the top becomes the norm", "Poor HR policies on harassment", "Remote work reducing accountability"],
-          "answer": "Leadership silence — uncivil behavior tolerated at the top becomes the norm",
-          "explanation": "Thakkar's research shows that uncivil behavior cascades downward — when leaders are uncivil without consequence, it becomes culturally permitted.",
+          "choices": [
+            "High stress industries inherently produce incivility",
+            "Poor HR policies on harassment",
+            "Leadership silence \u2014 uncivil behavior tolerated at the top becomes the norm",
+            "Remote work reducing accountability"
+          ],
+          "answer": "Leadership silence \u2014 uncivil behavior tolerated at the top becomes the norm",
+          "explanation": "Thakkar's research shows that uncivil behavior cascades downward \u2014 when leaders are uncivil without consequence, it becomes culturally permitted.",
           "difficulty": "Medium"
         },
         {
           "question": "What does Thakkar say is the most effective structural change companies can make to reduce incivility?",
-          "choices": ["More harassment training", "Including respectful behavior in performance evaluations for all managers", "Stricter HR complaint processes", "Anonymous reporting hotlines"],
+          "choices": [
+            "Including respectful behavior in performance evaluations for all managers",
+            "More harassment training",
+            "Stricter HR complaint processes",
+            "Anonymous reporting hotlines"
+          ],
           "answer": "Including respectful behavior in performance evaluations for all managers",
-          "explanation": "Thakkar argues behavior only changes when it's measured and has consequences — building civility into manager evaluations makes it a real business expectation.",
+          "explanation": "Thakkar argues behavior only changes when it's measured and has consequences \u2014 building civility into manager evaluations makes it a real business expectation.",
           "difficulty": "Hard"
         }
       ]
