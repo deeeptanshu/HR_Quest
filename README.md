@@ -1,185 +1,257 @@
-# 🎮 LennyRPG - Test Your Product Knowledge
+# HR Quest
 
-[![Play Now](https://img.shields.io/badge/🎯_Play_Now-FFD700?style=for-the-badge)](https://www.lennyrpg.fun/)
-[![Lenny's Podcast](https://img.shields.io/badge/🎙️_Lenny's_Podcast-4A90E2?style=for-the-badge)](https://www.lennysnewsletter.com/podcast)
+[![Play Now](https://img.shields.io/badge/Play_Now-FFD700?style=for-the-badge)](https://hr-quest.vercel.app/)
+[![Built with Phaser](https://img.shields.io/badge/Built_with-Phaser_3-8B0000?style=for-the-badge)](https://phaser.io)
+[![Vue 3](https://img.shields.io/badge/Vue-3-42b883?style=for-the-badge)](https://vuejs.org/)
 
-**A retro-style RPG game featuring 283 legendary guests from [Lenny's Podcast](https://www.lennysnewsletter.com/podcast)** by Lenny Rachitsky.
+A Pokemon-style RPG where you battle 20 real HR thought leaders by answering HR knowledge questions. Win the battle, capture the guest. Built for HR professionals who want to test what they know — or learn what they don't.
 
-Battle through product leaders, designers, and founders from companies like Airbnb, Stripe, Figma, and more. Answer challenging questions about product management, growth, and building great products. Level up your PM skills while having fun!
-
-![LennyRPG Screenshot](public/OpenGraph.png)
+**Play at [hr-quest.vercel.app](https://hr-quest.vercel.app/)**
 
 ---
 
-## 🎯 About
+## What It Is
 
-LennyRPG transforms Lenny Rachitsky's incredible podcast guest lineup into an epic adventure. Each guest becomes a capturable character with questions based on their expertise and insights from their podcast episodes.
+HR Quest puts you in an overworld map where HR legends roam as NPC characters. Walk up to one, trigger a battle, and answer 3 multiple-choice questions based on their area of expertise — psychological safety, pay transparency, AI in HR, performance management, and more.
 
-Think Pokemon meets Product Management - a fun, educational way to test and improve your PM knowledge!
+Answer correctly and you earn XP. Answer wrong and you lose HP. Capture all 20 guests to complete the game.
 
-## ✨ Features
+The questions are written so that any HR professional can reason through them — you don't need to have watched a specific podcast or read a specific book. If you know your HR fundamentals, you can play.
 
-- 🎯 **283 Legendary Guests** - Battle product leaders from top tech companies
-- 📚 **Product Knowledge Quiz** - Test yourself on PM frameworks, growth strategies, and startup wisdom
-- 🎮 **Retro RPG Gameplay** - Pokemon-inspired mechanics with modern web technology
-- 📈 **Global Leaderboard** - Compete with product enthusiasts worldwide using Supabase
-- 🗺️ **Progressive Difficulty** - 29 maps with escalating challenges
-- 💯 **Perfect Kill Bonuses** - Earn extra XP and HP for flawless battles (3/3 correct answers)
-- 🎁 **Bonus Questions** - 5% chance for bonus XP and healing rewards
-- ⚡ **Session Tracking** - Your progress updates in real-time on the leaderboard
-- 🎨 **Pixel Art Aesthetic** - Retro visuals with smooth animations
+---
 
-## 🎲 Game Rules
+## Guests
 
-### Battle Mechanics
-- **Max HP**: 100
-- **Wrong Answer Penalty**: -10 HP
-- **Game Over**: HP ≤ 0 (restart from beginning)
-- **Questions per Battle**: 3 questions per guest
+**Level 1 — The Legends**
+Dave Ulrich, Patty McCord, Laszlo Bock, Josh Bersin, Amy Edmondson
 
-### XP & Leveling
-- **XP per Correct Answer**: Scales with level (10-50 XP)
-- **XP to Level Up**: 24 × XP per correct answer
-- **Level Cap**: 29 levels (one per map)
+**Level 2 — Culture & People**
+Johnny C. Taylor Jr., Kim Scott, Marcus Buckingham, Jennifer Moss, Hannah Williams
 
-### Special Rewards
-- **Perfect Kill (3/3 correct)**:
-  - Double XP (6× base XP)
-  - +20 HP healing
-- **Bonus Question (5% chance)**:
-  - +2× XP if answered correctly
-  - +10 HP healing
-  - Stacks with Perfect Kill for huge rewards!
+**Level 3 — Talent & AI**
+Adam Grant, Jim Link, Dan Shapero, Kyle Holm, Rich Safeer
 
-## 🚀 Play Now
+**Level 4 — Operations & DEI**
+Jathan Janove, Gad Levanon, Brian Reaves, Myrna Maysonet, Sejal Thakkar
 
-🎯 **[www.lennyrpg.fun](https://www.lennyrpg.fun/)**
+---
 
-No installation required - play directly in your browser!
+## How to Play
 
-## 🛠️ Tech Stack
+- **Move** — Arrow keys or WASD
+- **Battle** — Walk near a guest to trigger an encounter
+- **Answer** — Choose A / B / C / D for each question
+- **Win** — Get 2 of 3 questions right to capture the guest
+- **Lose** — Drop to 0 HP and it's game over
 
-Built with modern web technologies for optimal performance:
+Each correct answer earns XP. Level up to unlock new maps and face harder guests. A perfect battle (3/3 correct) gives bonus XP and heals HP.
 
-- **Game Engine**: [Phaser 3.90.0](https://phaser.io) - HTML5 game framework
-- **Frontend**: [Vue 3.5.13](https://vuejs.org/) - Progressive JavaScript framework
-- **Build Tool**: [Vite 6.3.1](https://vitejs.dev/) - Next generation frontend tooling
-- **Database**: [Supabase](https://supabase.com/) - Open source Firebase alternative
-- **Icons**: [Iconify](https://iconify.design/) - Universal icon framework
-- **Styling**: Press Start 2P font for authentic retro aesthetics
+---
 
-## 💻 Development
+## Battle Mechanics
 
-### Prerequisites
+| Rule | Detail |
+|------|--------|
+| Questions per battle | 3 |
+| HP penalty per wrong answer | -10 HP |
+| Starting HP | 100 |
+| Game over | HP reaches 0 |
+| Win condition | 2 or more correct answers |
+| Perfect battle bonus | Double XP + HP restore |
+| Levels | 4 |
+| Total guests | 20 (5 per level) |
 
-- [Node.js](https://nodejs.org) (v16 or higher)
-- npm or yarn
+---
 
-### Installation
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Game engine | Phaser 3 |
+| Frontend | Vue 3 |
+| Build tool | Vite |
+| Leaderboard | Supabase |
+| Hosting | Vercel |
+| Font | Press Start 2P |
+| Icons | Iconify (pixelarticons) |
+
+---
+
+## Project Structure
+
+```
+HR_Quest/
+├── public/
+│   └── assets/
+│       ├── avatars/          # 20 pixel art guest avatars (.webp)
+│       ├── questions.json    # All 100 questions across 20 guests
+│       └── GameLogo2.webp    # Game logo
+├── src/
+│   ├── components/
+│   │   ├── BattleScreen.vue       # Battle UI and question flow
+│   │   ├── BattleResult.vue       # Victory / defeat screen
+│   │   ├── CollectionScreen.vue   # Captured guests gallery
+│   │   ├── LeaderboardPanel.vue   # Global leaderboard
+│   │   ├── ShareModal.vue         # LinkedIn share card
+│   │   ├── EncounterDialog.vue    # Guest encounter prompt
+│   │   ├── LevelComplete.vue      # Level up screen
+│   │   └── GameOver.vue           # Game over screen
+│   ├── game/
+│   │   ├── scenes/
+│   │   │   ├── MainMenu.js        # Title screen
+│   │   │   └── Overworld.js       # Map and NPC movement
+│   │   ├── StageConfig.js         # Guest tier and level config
+│   │   ├── GuestTitles.js         # Guest names and titles
+│   │   ├── GameState.js           # Save/load player state
+│   │   └── assets.js              # Asset path constants
+│   ├── lib/
+│   │   └── supabase.js            # Supabase client setup
+│   ├── services/
+│   │   ├── leaderboard.js         # Local leaderboard fallback
+│   │   └── supabase-leaderboard.js # Global leaderboard via Supabase
+│   ├── App.vue                    # Root component and game layout
+│   └── main.js                    # App entry point
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## Running Locally
+
+**Prerequisites:** Node.js v16+
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/lennyrpg.git
-cd lennyrpg
+# Clone the repo
+git clone https://github.com/deeeptanshu/HR_Quest.git
+cd HR_Quest
 
 # Install dependencies
 npm install
+
+# Start dev server
+npm run dev
 ```
 
-### Available Commands
+Opens at `http://localhost:8080`
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Launch development server at `http://localhost:8080` |
-| `npm run build` | Create production build in `dist/` folder |
-
-### Project Structure
-
+```bash
+# Production build
+npm run build
 ```
-lennyrpg/
-├── public/              # Static assets
-│   ├── assets/          # Game sprites, audio, images
-│   ├── OpenGraph.png    # Social sharing image
-│   ├── robots.txt       # SEO crawling rules
-│   ├── sitemap.xml      # Site structure for search engines
-│   └── manifest.json    # PWA configuration
-├── src/
-│   ├── components/      # Vue components
-│   │   ├── BattleScreen.vue
-│   │   ├── LeaderboardPanel.vue
-│   │   └── ...
-│   ├── game/            # Phaser game code
-│   │   ├── scenes/      # Game scenes (MainMenu, Overworld, etc.)
-│   │   ├── GuestData.js # 283 podcast guest data
-│   │   └── EventBus.js  # Vue ↔ Phaser communication
-│   ├── services/        # API services (Supabase)
-│   ├── App.vue          # Root Vue component
-│   └── main.js          # Application entry point
-├── index.html           # HTML entry with SEO meta tags
-└── package.json         # Dependencies and scripts
-```
-
-### Development Workflow
-
-1. **Run the dev server**: `npm run dev`
-2. **Edit files** in `src/` - Vite will hot-reload automatically
-3. **Test changes** in your browser at `http://localhost:8080`
-4. **Build for production**: `npm run build`
-5. **Deploy** the `dist/` folder to your hosting service
-
-## 🎨 Content
-
-### Guest Data
-All 283 podcast guests are stored in `src/game/GuestData.js` with:
-- Guest name and title
-- Company/background
-- Avatar image
-- Episode URL
-- Trivia questions with answers and explanations
-
-### Question Format
-Each guest has 10 multiple-choice questions covering:
-- Product management frameworks
-- Growth strategies
-- Career advice
-- Company-building insights
-- Lessons from their podcast episode
-
-## 📊 Leaderboard
-
-The global leaderboard uses Supabase for real-time updates:
-- Session-based tracking (one entry per game session)
-- Auto-updates after each battle
-- Displays: Level, XP, Captured guests, Accuracy, Correct/Wrong answers
-- Visual highlighting for your current session
-
-## 🔗 Links
-
-- 🎯 **Play Game**: [www.lennyrpg.fun](https://www.lennyrpg.fun/)
-- 🎙️ **Lenny's Podcast**: [lennysnewsletter.com/podcast](https://www.lennysnewsletter.com/podcast)
-- 💼 **Creator**: [Ben Shih](https://benshih.design/) | [LinkedIn](https://linkedin.com/in/hbshih)
-
-## 🙏 Credits
-
-### Created By
-**[Ben Shih](https://benshih.design/)** - Game design, development, and implementation
-
-### Content Source
-**[Lenny Rachitsky](https://www.lennysnewsletter.com/)** - Original podcast content and guest insights from [Lenny's Podcast](https://www.lennysnewsletter.com/podcast)
-
-### Built With
-- [Phaser](https://phaser.io) - Game engine
-- [Vue.js](https://vuejs.org/) - Frontend framework
-- [Supabase](https://supabase.com/) - Database and authentication
-
-## 📜 License
-
-This project is a fan-made educational game based on public podcast content. All guest names, titles, and podcast references belong to their respective owners.
-
-Game code and implementation © 2026 Ben Shih. All rights reserved.
 
 ---
 
-**Made with ❤️ for the product management community**
+## Environment Variables
 
-Share your high score: [#LennyRPG](https://twitter.com/intent/tweet?text=I%20just%20played%20LennyRPG!%20Test%20your%20product%20knowledge%20at%20https://www.lennyrpg.fun)
+To enable the global leaderboard, add these to your `.env` file or Vercel environment variables:
+
+```
+VITE_SUPABASE_URL=https://your-project.supabase.co
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+Without these, the game still works — the leaderboard falls back to local storage and scores are only visible to that browser session.
+
+### Supabase Table Setup
+
+Run this SQL in your Supabase project to create the leaderboard table:
+
+```sql
+CREATE TABLE leaderboard (
+  id uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+  session_id text UNIQUE NOT NULL,
+  player_name text NOT NULL DEFAULT 'Player',
+  level integer DEFAULT 1,
+  xp integer DEFAULT 0,
+  max_hp integer DEFAULT 100,
+  captured integer DEFAULT 0,
+  total integer DEFAULT 20,
+  accuracy numeric DEFAULT 0,
+  correct integer DEFAULT 0,
+  wrong integer DEFAULT 0,
+  created_at timestamptz DEFAULT now(),
+  updated_at timestamptz DEFAULT now()
+);
+
+ALTER TABLE leaderboard ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Public read" ON leaderboard FOR SELECT USING (true);
+CREATE POLICY "Public insert" ON leaderboard FOR INSERT WITH CHECK (true);
+CREATE POLICY "Public update" ON leaderboard FOR UPDATE USING (true);
+```
+
+---
+
+## Adding Questions
+
+All questions live in `public/assets/questions.json`. Each guest has 5 questions.
+
+```json
+{
+  "guest": "Guest Name",
+  "category": "Topic Area",
+  "questions": [
+    {
+      "question": "Short, clear question any HR professional can reason through?",
+      "choices": ["Option A", "Option B", "Option C", "Option D"],
+      "answer": "Option B",
+      "explanation": "Why this answer is correct.",
+      "difficulty": "Medium"
+    }
+  ]
+}
+```
+
+**Question writing rules:**
+- Keep questions under 120 characters
+- Write questions that test HR knowledge through reasoning — not podcast-specific trivia
+- Distribute correct answers evenly across A, B, C, D positions
+- All 4 choices must be plausible — no obvious throwaway options
+
+---
+
+## Adding Guests
+
+**1. Add questions** to `public/assets/questions.json` following the format above.
+
+**2. Add the guest** to the appropriate tier in `src/game/StageConfig.js`:
+
+```js
+{
+  tier: 5,
+  guests: ["New Guest One", "New Guest Two", ...]
+}
+```
+
+**3. Add their title** in `src/game/GuestTitles.js`:
+
+```js
+"New Guest One": "Their Title and Role"
+```
+
+**4. Add their avatar** — pixel art `.webp` file with transparent background to `public/assets/avatars/New-Guest-One_pixel_art.webp`
+
+---
+
+## Inspiration
+
+Forked from [PokeLenny](https://github.com/hbshih/PokeLenny) by Ben Shih — a Pokemon-style RPG built around Lenny Rachitsky's product podcast. HR Quest adapts the same mechanics for the HR community, with an entirely new guest roster, question bank, branding, and Intervue sponsorship.
+
+---
+
+## Credits
+
+- **Game concept and original codebase** — [Ben Shih](https://github.com/hbshih) (PokeLenny)
+- **HR Quest adaptation** — [Deepanshu](https://github.com/deeeptanshu)
+- **Inspired by** — SHRM HR Podcast episodes
+- **Sponsored by** — [Intervue](https://intervue.io) — AI-powered technical interviews
+
+---
+
+## License
+
+Fan-made educational project based on publicly available HR content. Guest names referenced for educational purposes. All guest names belong to their respective owners.
+
+Game code © 2026 HR Quest. Built on the open-source PokeLenny codebase.
