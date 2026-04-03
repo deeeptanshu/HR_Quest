@@ -416,15 +416,14 @@ function handleContainerClick(event) {
 
 /* Buttons */
 .action-buttons {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
   justify-content: center;
-  width: 100%;
-  overflow: hidden;
 }
 
 .action-buttons.single {
+  grid-template-columns: minmax(0, 240px);
   justify-content: center;
 }
 
@@ -442,9 +441,7 @@ function handleContainerClick(event) {
   justify-content: center;
   gap: 8px;
   white-space: nowrap;
-  flex: 1;
-  min-width: 0;
-  max-width: none;
+  width: 100%;
   touch-action: manipulation;
 }
 
@@ -506,8 +503,7 @@ function handleContainerClick(event) {
 /* Responsive */
 @media (max-width: 768px) {
   .result-container {
-    padding: 24px 16px;
-    width: 92%;
+    padding: 30px 20px;
   }
 
   .result-title {
@@ -523,23 +519,17 @@ function handleContainerClick(event) {
   }
 
   .action-buttons {
-    flex-direction: row;
-    gap: 8px;
-    width: 100%;
-    overflow: hidden;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .action-buttons.single {
-    justify-content: center;
+    grid-template-columns: minmax(0, 200px);
   }
 
   .result-btn {
-    font-size: 8px;
-    padding: 10px 6px;
-    flex: 1;
-    min-width: 0;
-    max-width: none;
-    white-space: nowrap;
+    font-size: 9px;
+    padding: 10px 8px;
   }
 
   .episode-link {
@@ -547,8 +537,8 @@ function handleContainerClick(event) {
   }
 
   .result-btn-icon {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
   }
 }
 </style>
