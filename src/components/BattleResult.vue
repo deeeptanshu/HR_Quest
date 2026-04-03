@@ -421,6 +421,7 @@ function handleContainerClick(event) {
   gap: 15px;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .action-buttons.single {
@@ -442,7 +443,8 @@ function handleContainerClick(event) {
   gap: 8px;
   white-space: nowrap;
   flex: 1;
-  max-width: 220px;
+  min-width: 0;
+  max-width: none;
   touch-action: manipulation;
 }
 
@@ -524,6 +526,7 @@ function handleContainerClick(event) {
     flex-direction: row;
     gap: 8px;
     width: 100%;
+    overflow: hidden;
   }
 
   .action-buttons.single {
