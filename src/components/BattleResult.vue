@@ -504,7 +504,8 @@ function handleContainerClick(event) {
 /* Responsive */
 @media (max-width: 768px) {
   .result-container {
-    padding: 30px 20px;
+    padding: 24px 16px;
+    width: 92%;
   }
 
   .result-title {
@@ -519,20 +520,23 @@ function handleContainerClick(event) {
     font-size: 10px;
   }
 
-  .result-btn {
-    font-size: 9px;
-    padding: 10px 8px;
-    flex: 1;
-    max-width: 160px;
-  }
-
   .action-buttons {
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
   }
 
   .action-buttons.single {
     justify-content: center;
+  }
+
+  .result-btn {
+    font-size: 8px;
+    padding: 10px 6px;
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    white-space: nowrap;
   }
 
   .episode-link {
@@ -540,8 +544,8 @@ function handleContainerClick(event) {
   }
 
   .result-btn-icon {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
   }
 }
 </style>
