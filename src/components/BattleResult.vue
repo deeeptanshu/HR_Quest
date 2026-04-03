@@ -419,7 +419,7 @@ function handleContainerClick(event) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 15px;
-  justify-content: center;
+  width: 100%;
 }
 
 .action-buttons.single {
@@ -521,6 +521,7 @@ function handleContainerClick(event) {
   .action-buttons {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+    width: 100%;
   }
 
   .action-buttons.single {
